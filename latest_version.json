@@ -1,0 +1,72 @@
+{
+  "latest_version": "1.2.0",
+  "min_supported": "1.2.0",
+  "release_date": "2026-06-10",
+  "notes": "Major reliability release: parallel-processing table corruption fixed, packaged-app crashes fixed, plus the new in-app update checker.",
+  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.2.0/TMC.Processor.v1.2.0.zip",
+  "changelog": [
+    {
+      "version": "1.2.0",
+      "date": "2026-06-10",
+      "changes": [
+        "Fixed a parallel-processing race that could corrupt one row of a longer-than-2-hour report's data tables (a row would show another table's cell layout — misaligned, italic, or ###### values). The format copy used the shared Windows clipboard, which the 4 parallel Excel workers could clobber mid-operation; it now uses a direct in-process copy, so neither the workers nor anything you copy-paste while a batch runs can corrupt a report.",
+        "New corruption scanner (tools/scan_table_corruption.py) that audits a whole Final Data folder for the above corruption signature in seconds.",
+        "Fixed packaged-app (EXE) crash on machines with the CountVault admin flag: the app tried to build the admin page from a module that doesn't ship in the EXE.",
+        "Fixed catastrophic packaged-app bug where starting a batch spawned an endless cascade of app windows (each background worker booted the full GUI) until the machine's display manager crashed. Worker processes now bootstrap correctly in the EXE.",
+        "Fixed 6/7/8-leg page margins randomly reverting to Excel defaults in batches (diagram bleeding off the page edge, overlapping tables, sliver pages). Margins are now forced to a known state every render, with a post-save verify-and-repair backstop.",
+        "Fixed 5-leg reports longer than 2 hours: detail-table rows now reproduce the template's own merged-cell layout (any leg count, any bin count) and stray borders between inserted intervals are cleaned up.",
+        "Vendor files marking an absent leg as 'No Leg' are now parsed correctly (a 7-leg site no longer renders as 8-leg).",
+        "Database re-renders now keep every leg's street label: 5/6/7/8-leg sites no longer collapse to a 4-leg diagram when rendered from Site History (schema v10 + backfill tool).",
+        "7-leg and 8-leg report generation is ~21% faster (cell writes batched into single operations), with smaller gains on 3/4/5-leg.",
+        "Download Reports dialog lists each collection window separately (a 6-9 AM + 11 AM-2 PM + 3-6 PM study shows three windows, never one '6 AM-6 PM' span); per-day select, format choice (Both/PDF/XLSX), and download-to-folder added.",
+        "Both PDF and XLSX can be downloaded together everywhere downloads exist (desktop site detail, portal site page with multi-select + per-day zips).",
+        "Site History trend chart gained 'All AM / Midday / PM periods' filters that compare like periods across collections (plotting peak-hour volume when windows differ, since totals aren't comparable).",
+        "QC map: top control bar no longer overlaps the zoom buttons or Views panel when the window narrows; rotate and move edits now persist in browser storage like resize already did; removed the non-functional Save QC Changes button.",
+        "New in-app update checker: the app now tells you when a new version is out, shows the full changelog, and downloads the update for you (this banner!)."
+      ]
+    },
+    {
+      "version": "1.1.5",
+      "date": "2026-06-04",
+      "changes": [
+        "Full 7-leg and 8-leg intersection support: page-1 diagrams plus complete data tables for all 7/8 directions and all 8 movements (hand-crafted wide templates; 7-leg reuses the 8-leg template with the unused block N/A'd).",
+        "Variable-length studies for 6/7/8-leg: data tables now grow or shrink to the actual interval count (anything from sub-hour up to a full 24 hours / 96 bins), matching the 4/5-leg behavior. Carries over automatically to database re-renders and custom-window reports.",
+        "Honest gapped-window display everywhere: a count collected 7-9 AM + 4-6 PM is shown and counted as two collection periods, never a fictitious continuous '7 AM - 6 PM'. Enforced by a build-time check so the bug class can't quietly return.",
+        "Per-window report rendering: gapped studies export one report per actual window (AM/MD/PM naming), in the app, the portal, and bulk zip downloads.",
+        "Graphical period-split editor: draggable timeline per file, split-in-half, apply one file's pattern to the rest, gap-aware clamping.",
+        "Speed and reliability: persistent pre-warmed worker pool (no more dead minute at batch start), outputs staged in %TEMP% to dodge antivirus races, automatic retry on transient Excel COM failures, headless-Edge render retry, and smooth monotonic progress reporting.",
+        "Maps: hybrid satellite with street and place labels, customizable heatmap panel (weight by counts / volume / peak, spread and intensity sliders), far less marker clustering, richer site popups with per-window stats and trend charts.",
+        "GIS export rebuilt on the real parser (raw vendor files now export correct volumes, multi-day averaging, AM/MD/PM peaks, auto-matched coordinates).",
+        "Kapturrit archive search, project-name overrides, on-call sub-project grouping, and the 'Open' button now opens the batch's actual output folder."
+      ]
+    },
+    {
+      "version": "1.1.0",
+      "date": "2026-05-24",
+      "changes": [
+        "Site History database: every processed site is stored in a geographic database (sites cluster within 50 ft), with a full History tab — search, per-site detail, aliases, record cards, peak-volume trend charts, and an interactive all-sites map.",
+        "IDAX CountVault client portal: clients log in and see only their own counts — dashboard, sortable count tables, per-project rollups, site detail with downloads, map, and analytics. Access controlled by per-client grants with expiry.",
+        "Reports render straight from the database: any historical record can be re-rendered as XLSX/PDF on any machine, no original raw file needed (per-interval data stored at ingest).",
+        "Custom time-window reports: pick any clock window of a stored record and generate a fully recomputed report (stats, peak hour, PHF all recalculated). Single and bulk builders, cross-site bulk generation.",
+        "Per-record interval charts with per-direction / per-movement filtering and hover tooltips.",
+        "Cloud sync (Turso/libSQL) so the office desktop and laptop share one site-history database, with out-of-process sync that keeps the GUI responsive.",
+        "QC map state persistence (rotations, notes, verified flags) and the floating QC toolbar.",
+        "Batch client attribution tools, project-name parsing from folder structure, output de-duplication and attribution repair."
+      ]
+    },
+    {
+      "version": "1.0.0",
+      "date": "2026-05-20",
+      "changes": [
+        "Initial release of the IDAX TMC Processor desktop app.",
+        "Processes raw vendor TMC files (standard and SDOT variants, auto-detected) into VBA-quality XLSX + PDF reports: intersection diagram page with movement counts, TEV, PHF, HV%/PHF table, and complete interval data tables with peak-hour highlighting.",
+        "All common layouts: 3-leg (4 orientations), 4-leg, 5-leg (4 diagonal variants), and 6-leg (6 variants), with per-layout reference templates and golden-image regression protection on page-1 geometry.",
+        "Peak hour engine matching the VBA macro exactly (rolling-hour windows, PHF, heavy-vehicle classes, bikes excluded from peaks, crosswalk peds separated).",
+        "Interactive QC map: per-site intersection diagrams (SVG) with volumes per movement, bike/ped insets, drag-to-rotate and move, multi-date and combined views, flow-balance checking between adjacent intersections.",
+        "Kapturrit integration: auto-detects the project from the folder path, matches sites to the Kapturrit map for coordinates, loads TMC Parent KML directly.",
+        "Automatic AM/MD/PM time-period splitting with gap detection, multi-day site matching, auto folder routing of outputs to the project's Final Data folder.",
+        "Parallel batch processing across worker processes with per-job status, plus GIS exports (GeoJSON, KML, CSV, Shapefile)."
+      ]
+    }
+  ]
+}
