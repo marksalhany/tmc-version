@@ -13,6 +13,7 @@
         "Added orphan protection for 3/4/5-leg data tables (previously only 6/7/8-leg had it): if a section's title and column headers would land at the bottom of a page with the data starting on the next page, the whole section now moves to the next page.",
         "Fixed the Pk Hr / All / HV / HV% label graphic drifting below its box on long reports processed in parallel batches — the image is now re-pinned to its exact cell box right before saving.",
         "Smoother progress bar: the per-job time estimate now scales with the study length, so 12-hour reports no longer rush the bar to 90% and then sit frozen for two minutes.",
+        "Multi-day studies now show ONE continuous progress bar across the whole run — previously the bar filled and restarted for every date's batch.",
         "These pagination fixes apply to every layout and any study length (verified on 12-hour 48-interval reports and against all layout regression baselines)."
       ]
     },
