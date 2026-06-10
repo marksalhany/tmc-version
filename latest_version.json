@@ -1,10 +1,21 @@
 {
-  "latest_version": "1.2.0",
-  "min_supported": "1.2.0",
+  "latest_version": "1.2.1",
+  "min_supported": "1.2.1",
   "release_date": "2026-06-10",
-  "notes": "Major reliability release: parallel-processing table corruption fixed, packaged-app crashes fixed, plus the new in-app update checker.",
-  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.2.0/TMC.Processor.v1.2.0.zip",
+  "notes": "Long-report pagination fixed: footer always prints below the table, sections never strand their headers at a page bottom, and the Pk Hr label stays in its box.",
+  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.2.1/TMC.Processor.v1.2.1.zip",
   "changelog": [
+    {
+      "version": "1.2.1",
+      "date": "2026-06-10",
+      "changes": [
+        "Fixed long-report (more than 2 hours) pagination on 3/4/5-leg: the contact footer no longer prints on top of the table — when a page is full, the footer now drops into the bottom margin so it sits on white space. The detection always existed but its result was silently discarded before saving; it also measured pages against an incomplete page-break list. Both fixed.",
+        "Added orphan protection for 3/4/5-leg data tables (previously only 6/7/8-leg had it): if a section's title and column headers would land at the bottom of a page with the data starting on the next page, the whole section now moves to the next page.",
+        "Fixed the Pk Hr / All / HV / HV% label graphic drifting below its box on long reports processed in parallel batches — the image is now re-pinned to its exact cell box right before saving.",
+        "Smoother progress bar: the per-job time estimate now scales with the study length, so 12-hour reports no longer rush the bar to 90% and then sit frozen for two minutes.",
+        "These pagination fixes apply to every layout and any study length (verified on 12-hour 48-interval reports and against all layout regression baselines)."
+      ]
+    },
     {
       "version": "1.2.0",
       "date": "2026-06-10",
