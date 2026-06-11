@@ -1,10 +1,20 @@
 {
-  "latest_version": "1.2.1",
+  "latest_version": "1.2.2",
   "min_supported": "1.2.1",
-  "release_date": "2026-06-10",
-  "notes": "Long-report pagination fixed: footer always prints below the table, sections never strand their headers at a page bottom, and the Pk Hr label stays in its box.",
-  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.2.1/TMC.Processor.v1.2.1.zip",
+  "release_date": "2026-06-11",
+  "notes": "Security hardening for IT review: credentials moved out of the source into a machine-encrypted (DPAPI) store, TLS certificate verification enabled on all API calls, and version metadata embedded in the EXE.",
+  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.2.2/TMC.Processor.v1.2.2.zip",
   "changelog": [
+    {
+      "version": "1.2.2",
+      "date": "2026-06-11",
+      "changes": [
+        "Security: Kapturrit credentials are no longer present anywhere in the source code or EXE. They now live in a Windows DPAPI machine-encrypted store under the user profile (same pattern Helix IT approved for EC0 File Buddy): a plaintext seed file is encrypted and deleted on first use, and the encrypted file only decrypts on the machine that created it. Without credentials the app runs normally with map auto-matching disabled.",
+        "Security: TLS certificate verification is now enabled on all Kapturrit API calls (was previously disabled).",
+        "The EXE now carries embedded version metadata (right-click, Properties, Details: product name, company, version).",
+        "No functional changes to report processing or output."
+      ]
+    },
     {
       "version": "1.2.1",
       "date": "2026-06-10",
