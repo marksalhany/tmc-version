@@ -1,10 +1,20 @@
 {
-  "latest_version": "1.2.2",
+  "latest_version": "1.2.3",
   "min_supported": "1.2.1",
   "release_date": "2026-06-11",
-  "notes": "Security hardening for IT review: credentials moved out of the source into a machine-encrypted (DPAPI) store, TLS certificate verification enabled on all API calls, and version metadata embedded in the EXE.",
-  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.2.2/TMC.Processor.v1.2.2.zip",
+  "notes": "Team database sync: every install now syncs with the central count database (when configured), so the full count history is visible on every machine. Plus the v1.2.2 security hardening.",
+  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.2.3/TMC.Processor.v1.2.3.zip",
   "changelog": [
+    {
+      "version": "1.2.3",
+      "date": "2026-06-11",
+      "changes": [
+        "Team database sync: the packaged app now includes the database driver, so every install syncs with the central count database and sees the full shared history (Site History, maps, CountVault data). Previously only the admin machine could sync and laptops silently fell back to an empty local database.",
+        "Database credentials follow the same DPAPI machine-encryption pattern as the Kapturrit login: drop the provided config file into %USERPROFILE%\\.tmc_processor once, and on first launch it is encrypted to the machine and the plaintext is deleted. No config file = local-only mode, exactly as before.",
+        "Sync runs in a separate background process (never inside the app), so processing speed and UI responsiveness are unaffected. All reads and writes stay on the local replica.",
+        "No changes to report processing or output."
+      ]
+    },
     {
       "version": "1.2.2",
       "date": "2026-06-11",
