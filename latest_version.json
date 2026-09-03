@@ -1,10 +1,19 @@
 {
-  "latest_version": "1.2.6",
-  "min_supported": "1.2.6",
-  "release_date": "2026-08-15",
-  "notes": "Cloud sync reliability overhaul (uploads resume and self-recover), requesting firm on every project, client issue reporting, classic reports upload to CountVault automatically.",
-  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.2.6/TMC.Processor.v1.2.6.zip",
+  "latest_version": "1.2.7",
+  "min_supported": "1.2.7",
+  "release_date": "2026-09-03",
+  "notes": "Critical sync fix: stops the runaway cloud database usage. Update required.",
+  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.2.7/TMC.Processor.v1.2.7.zip",
   "changelog": [
+    {
+      "version": "1.2.7",
+      "date": "2026-09-03",
+      "changes": [
+        "CRITICAL: fixed two cloud-sync bugs that caused massive unnecessary database traffic (the sync no longer re-uploads data other machines already uploaded, and no longer re-scans the whole cloud interval table on every sync). All machines must update.",
+        "Sync runs are dramatically faster (typically a few seconds).",
+        "This version is mandatory: older versions show a red update banner and from this version onward unsupported builds disable processing until updated."
+      ]
+    },
     {
       "version": "1.2.6",
       "date": "2026-08-15",
@@ -132,5 +141,5 @@
       ]
     }
   ],
-  "sha256": "c8e2bfe4ea0116e66762d5dffdf10319af5d53134b3728dbb617ff626e0df419"
+  "sha256": "b3616fbdd922c9fac47057f100ba051e455081a0826fc07bdbf61bff63c68cb7"
 }
