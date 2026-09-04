@@ -1,10 +1,24 @@
 {
-  "latest_version": "1.2.7",
+  "latest_version": "1.2.8",
   "min_supported": "1.2.7",
-  "release_date": "2026-09-03",
-  "notes": "Critical sync fix: stops the runaway cloud database usage. Update required.",
-  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.2.7/TMC.Processor.v1.2.7.zip",
+  "release_date": "2026-09-04",
+  "notes": "Vehicle class schemes: raw files with any set of class bins (e.g. Lights / Other Vehicles / Articulated Trucks, or all 13 FHWA classes), per-class movement tables in modern reports, class views on the QC map and CountVault, 5 and 10 minute bins.",
+  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.2.8/TMC.Processor.v1.2.8.zip",
   "changelog": [
+    {
+      "version": "1.2.8",
+      "date": "2026-09-04",
+      "changes": [
+        "Vehicle class schemes: raw files may carry any set of vehicle classification sheets (for example Lights / Other Vehicles / Articulated Trucks, Lights / Other Vehicles / Buses, or all 13 FHWA classes). Each sheet is mapped to FHWA classes and nesting (a sheet that is a subset of another) is detected from the data.",
+        "Sites & Import: new Vehicle Classes button and Classes column. Files with a non-standard classification are flagged until the FHWA mapping is confirmed. The dialog lets you fix a bin's classes, mark a bin as a subset, choose which class the page-1 TMC diagram shows, and apply that choice to all sites.",
+        "Totals, heavy vehicle counts, peak hour and PHF honour the confirmed mapping everywhere (classic and modern reports, QC map, Site History, CountVault). Standard files are unaffected.",
+        "Modern reports: one full turning-movement table per vehicle class bin plus a Vehicle Classification Summary; 5 and 10 minute count intervals; 24-hour studies render with tighter tables; the volume profile shows the heavy-vehicle share stacked; pedestrian table gets a Peak Hour row; Split Periods now applies to modern reports.",
+        "QC map: a view per vehicle class bin with the time-range filter, and per-class rows in the site popup.",
+        "Site History: Classes column and filter; record cards list per-bin volumes; the diagram card offers per-bin views.",
+        "CountVault: Classes column and filter on My Counts, class badges and per-bin volumes on site pages, per-bin views in the intersection viewer and movement charts.",
+        "Database schema v15 (class_scheme, class_totals, n_class_bins on tmc_records)."
+      ]
+    },
     {
       "version": "1.2.7",
       "date": "2026-09-03",
@@ -141,5 +155,5 @@
       ]
     }
   ],
-  "sha256": "b3616fbdd922c9fac47057f100ba051e455081a0826fc07bdbf61bff63c68cb7"
+  "sha256": "d39870bf9dc7acf246ee62593be3b72ca9ae8ab44b0101beb307c2aa34a4eacc"
 }
