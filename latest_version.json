@@ -1,10 +1,20 @@
 {
-  "latest_version": "1.2.8",
-  "min_supported": "1.2.7",
-  "release_date": "2026-09-04",
-  "notes": "Vehicle class schemes: raw files with any set of class bins (e.g. Lights / Other Vehicles / Articulated Trucks, or all 13 FHWA classes), per-class movement tables in modern reports, class views on the QC map and CountVault, 5 and 10 minute bins.",
-  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.2.8/TMC.Processor.v1.2.8.zip",
+  "latest_version": "1.2.9",
+  "min_supported": "1.2.9",
+  "release_date": "2026-09-08",
+  "notes": "Sites that share a number on the Kapturrit map (TMC 1 next to True Demand 1) now get their own coordinates and label. Required update.",
+  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.2.9/TMC.Processor.v1.2.9.zip",
   "changelog": [
+    {
+      "version": "1.2.9",
+      "date": "2026-09-08",
+      "changes": [
+        "Kapturrit matching: when a map has several sites with the same number (for example TMC 1 and True Demand 1), each raw file is paired with the right one. The file's folder (True Demand vs TMC), then its street names, decide; the plain TMC site wins an even tie.",
+        "Those sites are shown with the Kapturrit label (True Demand 1) in the Sites table, the QC map pieces, tooltips and popups, so two counts no longer stack on one intersection.",
+        "Manual KML loads use the same matcher, so a KML exported from Kapturrit with labelled site numbers now matches too.",
+        "Includes every 1.2.8 fix (class bins, modern report tables, renamed bins, import speed)."
+      ]
+    },
     {
       "version": "1.2.8",
       "date": "2026-09-04",
@@ -158,5 +168,5 @@
       ]
     }
   ],
-  "sha256": "d47db4b460c945f56340fc0a2099d9b9d0242a306210736ed9018884b740eb94"
+  "sha256": "789cc786875b1c3b6910d396ba66b37ea1feaf43aff30ae7b06bf708dd50d78b"
 }
