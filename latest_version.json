@@ -2,13 +2,18 @@
   "latest_version": "1.2.9",
   "min_supported": "1.2.9",
   "release_date": "2026-09-08",
-  "notes": "Sites that share a number on the Kapturrit map (TMC 1 next to True Demand 1) now get their own coordinates and label. Required update.",
+  "notes": "Per-leg table headers, system peak summaries in the app, date folder naming, bulk download fix. Same required version, re-download the zip.",
   "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.2.9/TMC.Processor.v1.2.9.zip",
   "changelog": [
     {
       "version": "1.2.9",
       "date": "2026-09-08",
       "changes": [
+        "History bulk downloads of three or more reports failed silently; fixed.",
+        "Date folders are now named like 11-18-2025 Tuesday. Reports from the History download dialogs follow the same rule: one date stays flat, two or more dates get a folder per date.",
+        "System peak in the app: when a date has two or more sites, the batch writes a System Peak Summary PDF and an interactive HTML next to the reports, and every modern report gets a System Peak page with the system peak rows tinted green. Off via the Process page checkbox.",
+        "Modern reports honour the Street Names choice for the title and file name.",
+        "Data table headers name each leg: a site whose east and west legs have different names (Granada Blvd and a driveway) now shows each leg's own name over its Eastbound and Westbound columns in the classic report, matching the diagram. The Street Names choice still sets the title and file name.",
         "Kapturrit matching: when a map has several sites with the same number (for example TMC 1 and True Demand 1), each raw file is paired with the right one. The file's folder (True Demand vs TMC), then its street names, decide; the plain TMC site wins an even tie.",
         "Those sites are shown with the Kapturrit label (True Demand 1) in the Sites table, the QC map pieces, tooltips and popups, so two counts no longer stack on one intersection.",
         "Manual KML loads use the same matcher, so a KML exported from Kapturrit with labelled site numbers now matches too.",
@@ -168,5 +173,5 @@
       ]
     }
   ],
-  "sha256": "789cc786875b1c3b6910d396ba66b37ea1feaf43aff30ae7b06bf708dd50d78b"
+  "sha256": "13e6744ae91105a41e5f0f23ec9a802b31149334fdd8c377e8785391a98d9f91"
 }
