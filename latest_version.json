@@ -12,6 +12,7 @@
         "Raw files with a blank Classification cell were read as a 2-bin custom class scheme. Two P-07166 files had the Lights sheet's Classification cell (C11) empty, so Lights showed 0, the Vehicle Classes button asked for confirmation, and classic reports were locked off for the whole project. The class name now falls back to the sheet name when that cell is blank, so a standard file always reads as Standard.",
         "The import log prints a WARNING naming the sheet whose Classification cell was blank, so the raw file can still be corrected at the source.",
         "On the Process page, Modern reports and System peak summary now start unchecked every time the app opens.",
+        "Client Manager: rows for data held back from a customer in CountVault (a day, a site, a collection or a whole project) show readable labels in the Manage Customer grant table instead of raw ids. The hold editor itself lives in CountVault's Client Manager (Released data).",
         "Nothing else changed in the app. The parser's output is byte for byte identical to 1.2.9 for every well formed file (verified on all 20 reference layouts) and no report rendering code changed."
       ]
     },
