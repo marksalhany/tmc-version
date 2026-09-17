@@ -10,11 +10,12 @@
       "date": "2026-09-17",
       "changes": [
         "City of Redmond processing type. Raw files named <City_ID>_<Int_ID>.xlsx (for example 213_NHR-AVR.xlsx, with the Int_ID in the Site Code cell) are recognized on import and noted in the log. A Redmond IDs button appears on the Sites page: it lists every Redmond file with its Int_ID, City_ID and intersection description pre-filled from the file, and Process asks for confirmation before running if any are unconfirmed.",
-        "Redmond reports use the same layout as every other TMC report and are named <Int_ID>_<period> (NHR-AVR_PM.pdf), matching the old Redmond macro. Int_ID and City_ID print in the page header above the bordered area (classic) and in the title sub-line (modern), so nothing else on the page moves.",
+        "Redmond reports use the same layout as every other TMC report and are named <Int_ID>_<period> (NHR-AVR_PM.pdf), matching the old Redmond macro. Int_ID and City_ID print as two extra rows under Peak Hour in the page-1 header block (classic) and in the title sub-line (modern); page 1 only, nothing else on the page moves.",
         "Every Redmond report ships with TMC_Raw_<Int_ID>_<period>.xlsx, the one-sheet raw-data workbook the City receives (header block, legend, one row per interval with turning movements, heavy vehicles, bikes, pedestrians and crosswalk bikes), in the exact layout of the old macro and with values taken from the same data as the report.",
         "Redmond Int_ID, City_ID and description are stored with each count in the shared database and shown in CountVault (My Counts, site page, project site lists); the raw workbook appears in the Download menu when it has been uploaded.",
         "QC map: when Redmond sites are on the map, a Site labels switch in the Views panel shows each site by Int_ID or by City_ID.",
-        "Folder scans now pick up Redmond-named raw files (one underscore) alongside the standard <n>_<street>_<street>.xlsx files."
+        "Folder scans now pick up Redmond-named raw files (one underscore) alongside the standard <n>_<street>_<street>.xlsx files.",
+        "QC map merge: on the Process page and the QC Map page, 'Merge into an existing QC map' adds the loaded sites into a map you pick (or the qc_map.html the app finds in the project folder) and saves the result as a new file. A site-day already on the map is replaced for the hours the new files cover and keeps its other hours; sites only on the old map stay. The line under the box says how many sites and dates the existing map holds. Maps written from this version on carry the data needed to merge."
       ]
     },
     {
@@ -196,5 +197,5 @@
       ]
     }
   ],
-  "sha256": "aa2b4366f85ce3328e68bc0970f1c5d9e332ce63143d236223bb263280d211e5"
+  "sha256": "353be10c60237878ddc3caa1512b2eff2d4243ccf3c424730c83df7806a7dc64"
 }
