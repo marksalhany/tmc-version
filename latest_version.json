@@ -1,10 +1,22 @@
 {
-  "latest_version": "1.2.10",
+  "latest_version": "1.2.11",
   "min_supported": "1.2.9",
-  "release_date": "2026-09-11",
-  "notes": "Fixes standard raw files being flagged as 2-bin custom (Lights showed 0, classic locked off) when a Classification cell in the raw file is blank.",
-  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.2.10/TMC.Processor.v1.2.10.zip",
+  "release_date": "2026-09-17",
+  "notes": "City of Redmond processing type: Redmond raw files are detected on import, a Redmond IDs button confirms each Int_ID / City_ID / description, reports are named <Int_ID>_<period> with the IDs in the page header, and the TMC_Raw workbook ships next to every report.",
+  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.2.11/TMC.Processor.v1.2.11.zip",
   "changelog": [
+    {
+      "version": "1.2.11",
+      "date": "2026-09-17",
+      "changes": [
+        "City of Redmond processing type. Raw files named <City_ID>_<Int_ID>.xlsx (for example 213_NHR-AVR.xlsx, with the Int_ID in the Site Code cell) are recognized on import and noted in the log. A Redmond IDs button appears on the Sites page: it lists every Redmond file with its Int_ID, City_ID and intersection description pre-filled from the file, and Process asks for confirmation before running if any are unconfirmed.",
+        "Redmond reports use the same layout as every other TMC report and are named <Int_ID>_<period> (NHR-AVR_PM.pdf), matching the old Redmond macro. Int_ID and City_ID print in the page header above the bordered area (classic) and in the title sub-line (modern), so nothing else on the page moves.",
+        "Every Redmond report ships with TMC_Raw_<Int_ID>_<period>.xlsx, the one-sheet raw-data workbook the City receives (header block, legend, one row per interval with turning movements, heavy vehicles, bikes, pedestrians and crosswalk bikes), in the exact layout of the old macro and with values taken from the same data as the report.",
+        "Redmond Int_ID, City_ID and description are stored with each count in the shared database and shown in CountVault (My Counts, site page, project site lists); the raw workbook appears in the Download menu when it has been uploaded.",
+        "QC map: when Redmond sites are on the map, a Site labels switch in the Views panel shows each site by Int_ID or by City_ID.",
+        "Folder scans now pick up Redmond-named raw files (one underscore) alongside the standard <n>_<street>_<street>.xlsx files."
+      ]
+    },
     {
       "version": "1.2.10",
       "date": "2026-09-11",
@@ -184,5 +196,5 @@
       ]
     }
   ],
-  "sha256": "04b690033d28d5250b64238ef05194e80cf064c4156e2fb2e0ec697240dd499d"
+  "sha256": "aa2b4366f85ce3328e68bc0970f1c5d9e332ce63143d236223bb263280d211e5"
 }
