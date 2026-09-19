@@ -17,7 +17,8 @@
         "Folder scans now pick up Redmond-named raw files (one underscore) alongside the standard <n>_<street>_<street>.xlsx files.",
         "QC map merge: on the Process page and the QC Map page, 'Merge into an existing QC map' adds the loaded sites into a map you pick (or the qc_map.html the app finds in the project folder) and saves the result as a new file. A site-day already on the map is replaced for the hours the new files cover and keeps its other hours; sites only on the old map stay. The line under the box says how many sites and dates the existing map holds. Maps written from this version on carry the data needed to merge.",
         "Intersections that have a diagonal leg but are missing the cardinal leg next to it (for example NE and NW legs with no N leg) now process. Before, the report failed with 'Could not render report diagram' and the QC map stopped with a Map ERROR.",
-        "Kapturrit maps with two TMC Parent markers that share a Site #: coordinates now come from the marker whose streets match the raw file, then the more completely filled-in marker, instead of whichever came last. The import log warns about the duplicate so the map can be fixed."
+        "Kapturrit maps with two TMC Parent markers that share a Site #: coordinates now come from the marker whose streets match the raw file, then the more completely filled-in marker, instead of whichever came last. The import log warns about the duplicate so the map can be fixed.",
+        "All-Sites Map: the Street view now uses OpenStreetMap tiles. The old street tiles had started printing 'API KEY REQUIRED' across the map when zoomed out."
       ]
     },
     {
@@ -199,5 +200,5 @@
       ]
     }
   ],
-  "sha256": "39294efd20a5a1c171ce529ced2fe84bdd91cfca9d1cd7b054c7b9c7fe014338"
+  "sha256": "95969d2597fcfd8ff036f2b776284683324bf5f7f70290fda5567ca8a408bb40"
 }
