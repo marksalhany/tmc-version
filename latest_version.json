@@ -1,10 +1,18 @@
 {
-  "latest_version": "1.2.11",
+  "latest_version": "1.2.12",
   "min_supported": "1.2.9",
-  "release_date": "2026-09-17",
-  "notes": "City of Redmond processing type: Redmond raw files are detected on import, a Redmond IDs button confirms each Int_ID / City_ID / description, reports are named <Int_ID>_<period> with the IDs in the page header, and the TMC_Raw workbook ships next to every report.",
-  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.2.11/TMC.Processor.v1.2.11.zip",
+  "release_date": "2026-09-19",
+  "notes": "Team database sync fix: a newer copy of a count always wins, so an older copy on another machine can no longer overwrite it.",
+  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.2.12/TMC.Processor.v1.2.12.zip",
   "changelog": [
+    {
+      "version": "1.2.12",
+      "date": "2026-09-19",
+      "changes": [
+        "Team database sync: a newer copy of a count always wins. Before, a machine that had not yet picked up a teammate's re-processed count could push its own older copy back over it on the next sync. Nothing is lost when the two copies hold the same numbers, but a corrected count could have been undone, and CountVault showed the mismatch as 'Sync issue, data may be stale'.",
+        "The same rule covers a count's interval data: a machine holding an older copy no longer replaces the intervals of a count that is newer in the shared database."
+      ]
+    },
     {
       "version": "1.2.11",
       "date": "2026-09-17",
@@ -200,5 +208,5 @@
       ]
     }
   ],
-  "sha256": "95969d2597fcfd8ff036f2b776284683324bf5f7f70290fda5567ca8a408bb40"
+  "sha256": "5791d73d8fb086ae16591c34fb984703c297b9828ce5e57438ae2be074267556"
 }
