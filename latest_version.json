@@ -2,7 +2,7 @@
   "latest_version": "1.3.1",
   "min_supported": "1.3.0",
   "release_date": "2026-09-30",
-  "notes": "OmniProcessor 1.3.1: much faster TMC processing on laptops (as many reports at once as the computer has room for, slow diagrams no longer cancelled and redrawn, less work per report with identical reports) and a faster start, and the QC map keeps the view you picked when you switch dates. Includes 1.3.0: TMC Processor is now OmniProcessor, with MTE tube .txt files (Individual Vehicle Reports, 15M All Stats, 15M All Stats Speed Stats) processed in the same batch as TMCs, Classic and Modern tube outputs, tube sites and posted speed limits in CountVault, and tube vs TMC checks on the QC map.",
+  "notes": "OmniProcessor 1.3.1: much faster TMC processing on laptops (as many reports at once as the computer has room for, slow diagrams no longer cancelled and redrawn, less work per report with identical reports), a faster start, the QC map keeps the view you picked when you switch dates, and new computers open right away and set themselves up with the IDAX setup code. Includes 1.3.0: TMC Processor is now OmniProcessor, with MTE tube .txt files (Individual Vehicle Reports, 15M All Stats, 15M All Stats Speed Stats) processed in the same batch as TMCs, Classic and Modern tube outputs, tube sites and posted speed limits in CountVault, and tube vs TMC checks on the QC map.",
   "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.1/OmniProcessor.v1.3.1.zip",
   "changelog": [
     {
@@ -15,6 +15,10 @@
         "The activity log shows the computer's CPU threads and memory when a batch starts, how long each report took, and the total time of the batch.",
         "The app opens faster: the window is built without dozens of repeated layout passes, the Super Admin user list loads when that page opens, and the app's background helpers (report workers, tube workers, the cloud sync) start without loading the whole window first.",
         "QC map: the view you pick on the Views panel (Lights Only, Heavy Vehicles, Peak Hour and the rest, with its period) stays picked when you click another date, so PM Lights Only on one date shows PM Lights Only on the next. A date without that period or view shows the closest one it has, and the next date that has it shows it again. Before, every date click went back to the first period's All Vehicles.",
+        "A new computer opens right away. The first time OmniProcessor runs with the team keys it downloads the whole team database, and that download used to run inside the app, so the window sat \"Not Responding\" until it finished (about 5 minutes on a Helix laptop). It now runs in the background: the window is usable at once, the Site History page shows the download's progress, and counts processed in the meantime are saved as soon as it finishes. A slow download is no longer cut off after 10 minutes and started over.",
+        "New computers set themselves up with the IDAX setup code. The download carries the Kapturrit and team database keys sealed under that code (nothing in it can be read without the code), and the first launch on a computer without them asks for the code once. Computers that are already set up never see it.",
+        "The Kapturrit map list on Sites & Import closes when you move, resize or minimize the window or switch to another program. Before, it stayed on the screen where it was, on top of other windows, and so did the History page's time list.",
+        "Loading files never loses sites. The app reads the files of a load in several helper processes at once; when those cannot run on a computer (a locked-down laptop's security software, low memory) or stop answering, every file they did not read is now read by the app itself and the activity log says so. Before, a big project could load no sites at all on a Helix laptop. The number of helpers now follows the computer's cores and free memory.",
         "Includes everything in 1.3.0 (TMC Processor is now OmniProcessor, with tube counts), listed below."
       ]
     },
@@ -263,5 +267,5 @@
       ]
     }
   ],
-  "sha256": "8e484a86f97f818f31e812409d880588867e75a28fc41b2c572ba4f0211c95f9"
+  "sha256": "ef5875f8547e6f42c91e10baaff056307ea9ec4a153387db411faa08ae422f1a"
 }
