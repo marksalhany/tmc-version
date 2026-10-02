@@ -1,10 +1,20 @@
 {
-  "latest_version": "1.3.2",
+  "latest_version": "1.3.3",
   "min_supported": "1.3.0",
-  "release_date": "2026-10-01",
-  "notes": "OmniProcessor 1.3.2: runs fast and smooth on every computer. The team database no longer slows the app down (its log is folded back after each sync, a damaged copy is replaced in the background), a new computer opens right away and sets itself up with the IDAX setup code, loading files never loses sites, Kapturrit maps are found in nested folders and for loosely named files, tube counts from folders without a state land on the CountVault map, the QC map keeps the view you picked when you switch dates, the Kapturrit map list closes when you move the window, the HTML maps zoom closer with satellite imagery, and page 1 of the classic PDF is centered. Includes 1.3.1: much faster TMC processing on laptops.",
-  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.2/OmniProcessor.v1.3.2.zip",
+  "release_date": "2026-10-02",
+  "notes": "OmniProcessor 1.3.3: data patching and excluded bins work the way Tube ReportGen had them (every date of a file in one grid on both sides, Shift+click ranges across dates, source bins dragged onto the file and landing past midnight on the next date, excluding right on the Patching tab), plus the October 2 fixes: tube counts from folders without a state stay on the CountVault map, the HTML maps zoom closer with satellite imagery, and page 1 of the classic PDF is centered. Includes 1.3.2.",
+  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.3/OmniProcessor.v1.3.3.zip",
   "changelog": [
+    {
+      "version": "1.3.3",
+      "date": "2026-10-02",
+      "changes": [
+        "Tube site editor, Bins and Patching tabs: every date of a file now shows in one scrolling grid, on both sides of the Patching tab, instead of one date at a time. Click a bin, drag across bins, Ctrl+click to add one, or click one bin and Shift+click another for every bin between them, across dates too; click an hour for the whole hour or a date's line for the whole date.",
+        "Data patching works the way Tube ReportGen had it: pick source bins on the right and drag them onto the file on the left. The first one lands on the bin you drop it on and the rest follow in time, so a span past midnight goes on into the next date. While dragging, the bins they would land on light up green (fits), amber (some still have counts: you are asked before they are replaced) or red (past the file's dates). A click on the left with source bins picked still places them too.",
+        "Bins can be excluded and included right on the Patching tab: select them on the left (click, drag, Shift+click) and use Exclude selected, Include selected or Remove patches.",
+        "Includes everything republished into 1.3.2 on October 2: tube counts kept in a folder without a state are stored under the state their Kapturrit pins are in (they stay on the CountVault map), the HTML maps zoom with the mouse wheel, closer and with satellite imagery, page 1 of the classic PDF is centered, and a damaged copy of the team database no longer downloads interval data again on every sync."
+      ]
+    },
     {
       "version": "1.3.2",
       "date": "2026-10-01",
@@ -281,5 +291,5 @@
       ]
     }
   ],
-  "sha256": "b39780f53dbcec1ca86172c6bca8b58d2b62e6373505330f4aa599eb6adfc1d2"
+  "sha256": "99d7caf47fde3c0f4b0f4eb20e959d23dd59a18b4d9671150efd6d03bf6f9b48"
 }
