@@ -2,7 +2,7 @@
   "latest_version": "1.3.2",
   "min_supported": "1.3.0",
   "release_date": "2026-10-01",
-  "notes": "OmniProcessor 1.3.2: runs fast and smooth on every computer. The team database no longer slows the app down (its log is folded back after each sync, a damaged copy is replaced in the background), a new computer opens right away and sets itself up with the IDAX setup code, loading files never loses sites, the QC map keeps the view you picked when you switch dates, and the Kapturrit map list closes when you move the window. Includes 1.3.1: much faster TMC processing on laptops.",
+  "notes": "OmniProcessor 1.3.2: runs fast and smooth on every computer. The team database no longer slows the app down (its log is folded back after each sync, a damaged copy is replaced in the background), a new computer opens right away and sets itself up with the IDAX setup code, loading files never loses sites, Kapturrit maps are found in nested folders and for loosely named files, the QC map keeps the view you picked when you switch dates, and the Kapturrit map list closes when you move the window. Includes 1.3.1: much faster TMC processing on laptops.",
   "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.2/OmniProcessor.v1.3.2.zip",
   "changelog": [
     {
@@ -12,6 +12,7 @@
         "The app no longer bogs a computer down while it keeps its copy of the team database up to date. Each computer's copy kept every change in an ever-growing log (22 GB on one laptop), and every time the app or its background sync opened the copy it replayed that log first (about 30 seconds on a fast laptop, minutes on a Helix laptop). The log is now folded back into the database after each sync, so opening it is instant.",
         "A copy of the team database that had been damaged no longer makes every sync re-download the whole database (about 1 GB every minute while the app was open, and the cause of the damage in the first place). A damaged copy is replaced with a fresh one at the next start, in the background, once this computer's own counts are safely uploaded. A new computer's first sync no longer sends the whole database back or downloads it twice.",
         "Counts saved while the database is busy are retried instead of dropped.",
+        "Kapturrit maps are found for many more file layouts: maps filed in a folder inside ACTIVE PROJECTS (SoCal keeps each project's maps in the project's own folder), Dropbox folders like \"B - ACTIVE PROJECTS\", project numbers typed any way in a folder name (P07580, P 7623), and files kept outside the state folders (every state is searched). When several maps share a project number, the names of the folders the raw files sit in pick the right one (Scenario 3, not Scenario 3R), and the Kapturrit map list shows the maps inside those folders too.",
         "QC map: the view you pick on the Views panel (Lights Only, Heavy Vehicles, Peak Hour and the rest, with its period) stays picked when you click another date, so PM Lights Only on one date shows PM Lights Only on the next. A date without that period or view shows the closest one it has, and the next date that has it shows it again. Before, every date click went back to the first period's All Vehicles.",
         "A new computer opens right away. The first time OmniProcessor runs with the team keys it downloads the whole team database, and that download used to run inside the app, so the window sat \"Not Responding\" until it finished (about 5 minutes on a Helix laptop). It now runs in the background: the window is usable at once, the Site History page shows the download's progress, and counts processed in the meantime are saved as soon as it finishes. A slow download is no longer cut off after 10 minutes and started over.",
         "New computers set themselves up with the IDAX setup code. The download carries the Kapturrit and team database keys sealed under that code (nothing in it can be read without the code), and the first launch on a computer without them asks for the code once. Computers that are already set up never see it.",
@@ -276,5 +277,5 @@
       ]
     }
   ],
-  "sha256": "70d783e883529d5439ccbeeecc89c6b77d2492278dbf8cf6fda76e73eae67dfb"
+  "sha256": "27c467339d5d9bf68fd7c7e43cb13a11e6f895e163a6827299b812a485df53dd"
 }
