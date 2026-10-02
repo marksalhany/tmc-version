@@ -1,10 +1,18 @@
 {
-  "latest_version": "1.3.4",
+  "latest_version": "1.3.5",
   "min_supported": "1.3.4",
   "release_date": "2026-10-02",
-  "notes": "OmniProcessor 1.3.4: tube counts merge into a project's existing QC map (the project's newest map is found automatically, a tube-only batch writes its map after processing, and a merge keeps the tube counts already on the map), the Cities processing type is called Speed Stats and is picked for 15M Speed Stats files, and the Client Manager no longer sticks on \"Signing you back in\" at start. Includes 1.3.3.",
-  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.4/OmniProcessor.v1.3.4.zip",
+  "notes": "OmniProcessor 1.3.5: new computers set up with an activation code, or an admin approves them from OmniProcessor (Client Manager > Computers, where admins also make and revoke codes). The old setup code still works. Includes 1.3.4.",
+  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.5/OmniProcessor.v1.3.5.zip",
   "changelog": [
+    {
+      "version": "1.3.5",
+      "date": "2026-10-02",
+      "changes": [
+        "New computers: the first-launch box now takes an activation code, and it also asks CountVault for an admin's approval by itself, so an admin can approve the computer from OmniProcessor and the box closes and finishes setting up on its own. The setup code from before still works, offline. There is no Skip: OmniProcessor does not open without Kapturrit and the team database.",
+        "Admins: Client Manager > Computers makes any number of activation codes at once (who it is for, how many, how long they last, how many computers each opens for), shows which are used and revokes them, and lists the computers waiting for approval with the check code to match before you approve. The button shows how many are waiting, and admins with Slack notices on get a message when a new computer asks."
+      ]
+    },
     {
       "version": "1.3.4",
       "date": "2026-10-02",
@@ -302,5 +310,5 @@
       ]
     }
   ],
-  "sha256": "3c38952ae7404df42e7c025389990d3263838b02f343a15fa09ad0379f75f394"
+  "sha256": "5896c89eec495e0a513d00a2b6e7cde128658aaef44345607269fd2a64a9eadd"
 }
