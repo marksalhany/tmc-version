@@ -1,10 +1,20 @@
 {
-  "latest_version": "1.3.3",
+  "latest_version": "1.3.4",
   "min_supported": "1.3.0",
   "release_date": "2026-10-02",
-  "notes": "OmniProcessor 1.3.3: data patching and excluded bins work the way Tube ReportGen had them (every date of a file in one grid on both sides, Shift+click ranges across dates, source bins dragged onto the file and landing past midnight on the next date, excluding right on the Patching tab), plus the October 2 fixes: tube counts from folders without a state stay on the CountVault map, the HTML maps zoom closer with satellite imagery, page 1 of the classic PDF is centered, a damaged copy of the team database is set aside safely, tube counts merge into a project's QC map, and the Cities processing type is called Speed Stats and picked for 15M Speed Stats files. Includes 1.3.2.",
-  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.3/OmniProcessor.v1.3.3.zip",
+  "notes": "OmniProcessor 1.3.4: tube counts merge into a project's existing QC map (the project's newest map is found automatically, a tube-only batch writes its map after processing, and a merge keeps the tube counts already on the map), the Cities processing type is called Speed Stats and is picked for 15M Speed Stats files, and the Client Manager no longer sticks on \"Signing you back in\" at start. Includes 1.3.3.",
+  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.4/OmniProcessor.v1.3.4.zip",
   "changelog": [
+    {
+      "version": "1.3.4",
+      "date": "2026-10-02",
+      "changes": [
+        "QC maps: tube counts merge into a project's existing QC map. With tube files loaded, the project's newest QC map is found automatically and the merge box is ticked (Process & Export and the QC Map page); a batch of tube counts alone now writes its QC map after processing, in the project folder like the intersection maps. A merge also keeps the tube counts already on the map (before, they were dropped).",
+        "Tube counts: the Cities processing type is now called Speed Stats, and it is picked automatically when 15M Speed Stats files are loaded (a type picked by hand, or BFCOG / Bellevue / Redmond, stays).",
+        "The Client Manager no longer sticks on \"Signing you back in\" when the app starts; the live CountVault status and the Process page's customer row fill in at start too.",
+        "Includes everything republished into 1.3.3 on October 2 (the team database fixes), for computers that took 1.3.3 earlier in the day."
+      ]
+    },
     {
       "version": "1.3.3",
       "date": "2026-10-02",
@@ -13,9 +23,6 @@
         "Data patching works the way Tube ReportGen had it: pick source bins on the right and drag them onto the file on the left. The first one lands on the bin you drop it on and the rest follow in time, so a span past midnight goes on into the next date. While dragging, the bins they would land on light up green (fits), amber (some still have counts: you are asked before they are replaced) or red (past the file's dates). A click on the left with source bins picked still places them too.",
         "Bins can be excluded and included right on the Patching tab: select them on the left (click, drag, Shift+click) and use Exclude selected, Include selected or Remove patches.",
         "Team database: a computer whose copy of the database is damaged keeps it until everything it made is in the cloud, never replaces the cloud's count data with what it reads back from the damaged copy, and sets it aside in one piece at the next launch (before, with the app open, only part of it moved and syncing stopped on that computer).",
-        "QC maps: tube counts merge into a project's existing QC map. With tube files loaded, the project's newest QC map is found automatically and the merge box is ticked (Process & Export and the QC Map page); a batch of tube counts alone now writes its QC map after processing, in the project folder like the intersection maps. A merge also keeps the tube counts already on the map (before, they were dropped).",
-        "Tube counts: the Cities processing type is now called Speed Stats, and it is picked automatically when 15M Speed Stats files are loaded (a type picked by hand, or BFCOG / Bellevue / Redmond, stays).",
-        "The Client Manager no longer sticks on \"Signing you back in\" when the app starts; the live CountVault status and the Process page's customer row fill in at start too.",
         "Includes everything republished into 1.3.2 on October 2: tube counts kept in a folder without a state are stored under the state their Kapturrit pins are in (they stay on the CountVault map), the HTML maps zoom with the mouse wheel, closer and with satellite imagery, page 1 of the classic PDF is centered, and a damaged copy of the team database no longer downloads interval data again on every sync."
       ]
     },
@@ -295,5 +302,5 @@
       ]
     }
   ],
-  "sha256": "d30a0742057cf25e818a4f0c0aff7bb7a43dc63f1b97b2853fd6b23fe708b3d7"
+  "sha256": "3c38952ae7404df42e7c025389990d3263838b02f343a15fa09ad0379f75f394"
 }
