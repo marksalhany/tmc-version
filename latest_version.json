@@ -1,6 +1,6 @@
 {
   "latest_version": "1.3.4",
-  "min_supported": "1.3.0",
+  "min_supported": "1.3.4",
   "release_date": "2026-10-02",
   "notes": "OmniProcessor 1.3.4: tube counts merge into a project's existing QC map (the project's newest map is found automatically, a tube-only batch writes its map after processing, and a merge keeps the tube counts already on the map), the Cities processing type is called Speed Stats and is picked for 15M Speed Stats files, and the Client Manager no longer sticks on \"Signing you back in\" at start. Includes 1.3.3.",
   "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.4/OmniProcessor.v1.3.4.zip",
