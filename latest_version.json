@@ -10,7 +10,8 @@
       "date": "2026-10-02",
       "changes": [
         "New computers: the first-launch box now takes an activation code, and it also asks CountVault for an admin's approval by itself, so an admin can approve the computer from OmniProcessor and the box closes and finishes setting up on its own. The setup code from before still works, offline. There is no Skip: OmniProcessor does not open without Kapturrit and the team database.",
-        "Admins: Client Manager > Computers makes any number of activation codes at once (who it is for, how many, how long they last, how many computers each opens for), shows which are used and revokes them, and lists the computers waiting for approval with the check code to match before you approve. The button shows how many are waiting, and admins with Slack notices on get a message when a new computer asks."
+        "Admins: Client Manager > Computers makes any number of activation codes at once (who it is for, how many, how long they last, how many computers each opens for), shows which are used and revokes them, and lists the computers waiting for approval with the check code to match before you approve. The button shows how many are waiting, and admins with Slack notices on get a message when a new computer asks.",
+        "TMC raw files: a warning at import, and a question before processing, when a raw file has counts in movements the report has no column for (for example a corner driveway counted as Left / Thru / Right, or numbers on a leg marked n/a). Those counts used to land in the TEV but in no turn without anyone being told."
       ]
     },
     {
@@ -310,5 +311,5 @@
       ]
     }
   ],
-  "sha256": "5896c89eec495e0a513d00a2b6e7cde128658aaef44345607269fd2a64a9eadd"
+  "sha256": "c5be08be51c9d50787551eeb17184b1070b348e591ec96928b710f69325edf6b"
 }
