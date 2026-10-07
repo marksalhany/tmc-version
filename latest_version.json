@@ -1,10 +1,24 @@
 {
-  "latest_version": "1.3.7",
-  "min_supported": "1.3.7",
+  "latest_version": "1.3.8",
+  "min_supported": "1.3.8",
   "release_date": "2026-10-07",
-  "notes": "OmniProcessor 1.3.7 (required): swap a tube count's directions, find gaps in tube bins, Speed Stats from any tube file, San Jose two-box counts, long street names that fit, one summary card per site, and windows that fit small and scaled screens.",
-  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.7/OmniProcessor.v1.3.7.zip",
+  "notes": "OmniProcessor 1.3.8 (required): the Apply button is back in Split Periods (and four other windows), no more 25 mph from plain 15M files, San Jose from regular 15-minute files, the Processing type as buttons, both directions in every bin, blank days and Export edited .txt in tube patching.",
+  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.8/OmniProcessor.v1.3.8.zip",
   "changelog": [
+    {
+      "version": "1.3.8",
+      "date": "2026-10-07",
+      "changes": [
+        "Split Periods shows its Apply button again, and Period Labels, Redmond site IDs and the two History bulk report windows show their buttons again (1.3.6 and 1.3.7 left them out).",
+        "Tube counts from a plain 15M_ALL STATS file no longer show 25 mph from the file. Only a 15M Speed Stats file carries its own posted limit; counts stored with the old value are cleaned up.",
+        "San Jose works with regular 15-minute files. The 0-10 mph bin is split into 0-5 and 5-10 (about 12 percent below 5 mph, measured on real counts); every other number comes from the file.",
+        "The Processing type is a row of buttons. Hover one to see what it does.",
+        "Tube site editor: Total / Each direction shows both directions' counts in every bin, on the Bins and Patching tabs. The Patching grids show the same hover as the Bins tab.",
+        "Patching: excluding bins on the left no longer hides them on the right, and a bin with no vehicles takes a patch without being excluded first.",
+        "Patching: Add blank day adds the day before the first date or after the last, to patch into.",
+        "Export edited .txt writes the count with every edit in it (excluded bins, patches, blank days, swapped directions) in the file's own format."
+      ]
+    },
     {
       "version": "1.3.7",
       "date": "2026-10-07",
@@ -343,5 +357,5 @@
       ]
     }
   ],
-  "sha256": "c357a6229c9363b5a440c1e8a43fb196ab266f838bcb28421970ba3c7159273c"
+  "sha256": "4f50d85cd71f5973a94858a2888eb1d19fa5dac53e211e4b0631953a765dce90"
 }
