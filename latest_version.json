@@ -1,10 +1,18 @@
 {
-  "latest_version": "1.3.8",
-  "min_supported": "1.3.8",
+  "latest_version": "1.3.8a",
+  "min_supported": "1.3.8a",
   "release_date": "2026-10-07",
-  "notes": "OmniProcessor 1.3.8 (required): the Apply button is back in Split Periods (and four other windows), no more 25 mph from plain 15M files, San Jose from regular 15-minute files, the Processing type as buttons, both directions in every bin, blank days and Export edited .txt in tube patching.",
-  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.8/OmniProcessor.v1.3.8.zip",
+  "notes": "OmniProcessor 1.3.8a (required): San Jose warns before using a regular 15-minute file (its 0-5 and 5-10 mph columns are estimated) and recommends Individual Vehicle reports, which need no speed bins.",
+  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.8a/OmniProcessor.v1.3.8a.zip",
   "changelog": [
+    {
+      "version": "1.3.8a",
+      "date": "2026-10-07",
+      "changes": [
+        "San Jose: a regular 15-minute file (0-10 mph bottom bin) is flagged in red on the Process page and asked about before the run. Its 0-5 and 5-10 mph columns are estimated; everything else comes from the file.",
+        "San Jose: Individual Vehicle reports give every number exactly and need no speed bins. 15-minute files exported with 5 mph bins are exact too."
+      ]
+    },
     {
       "version": "1.3.8",
       "date": "2026-10-07",
@@ -357,5 +365,5 @@
       ]
     }
   ],
-  "sha256": "4f50d85cd71f5973a94858a2888eb1d19fa5dac53e211e4b0631953a765dce90"
+  "sha256": "4008e5773f99384f9f608c735d1ecd6018c2748e5c60c1ff552e9c54a8c8c679"
 }
