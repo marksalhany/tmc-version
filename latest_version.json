@@ -1,10 +1,19 @@
 {
-  "latest_version": "1.3.8a",
-  "min_supported": "1.3.8a",
+  "latest_version": "1.3.8c",
+  "min_supported": "1.3.8c",
   "release_date": "2026-10-07",
-  "notes": "OmniProcessor 1.3.8a (required): IDAX Quest maps (a switch at the top, off by default), and San Jose warns before using a regular 15-minute file (its 0-5 and 5-10 mph columns are estimated) and recommends Individual Vehicle reports, which need no speed bins.",
-  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.8a/OmniProcessor.v1.3.8a.zip",
+  "notes": "OmniProcessor 1.3.8c (required): the Classic reports follow the direction set in the app (a site set to E/W printed NB / SB), IDAX Quest maps (a switch at the top, off by default), and an update published while OmniProcessor is open shows a pop-up once nothing is processing.",
+  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.8c/OmniProcessor.v1.3.8c.zip",
   "changelog": [
+    {
+      "version": "1.3.8c",
+      "date": "2026-10-07",
+      "changes": [
+        "Tube counts: the Classic Volume, Speed and Class reports follow the direction set in the app. A site whose file name has no N-O / E-O (\"between ...\") and was set to E/W printed NB / SB on the Classic PDF; it now prints EB / WB like the QC map and the Modern reports.",
+        "IDAX Quest maps: a switch at the top of the window, off by default. When it is on, project maps and site coordinates are also looked up on IDAX Quest (TMC map panel, tube Find Map, project names), and turning it on or off with files loaded searches again. The first time it asks for your own IDAX Quest email and password.",
+        "Updates while OmniProcessor is open: it looks for a new release every 10 minutes. When one is published it shows a pop-up with Update now and Later, after any processing, GIS export or report run has finished. A required update turns processing off until it is installed, as it does at start-up."
+      ]
+    },
     {
       "version": "1.3.8a",
       "date": "2026-10-07",
@@ -366,5 +375,5 @@
       ]
     }
   ],
-  "sha256": "478967f77b2ed7994be6886d82bdf4e4d21844c84cc1ddbcccb05538d63fd43c"
+  "sha256": "c9b5fa2f73f9a5116a3152cbef7415f917b53b4ffd1eb46a44beec5282b9d7f6"
 }
