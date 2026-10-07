@@ -2,7 +2,7 @@
   "latest_version": "1.3.7",
   "min_supported": "1.3.7",
   "release_date": "2026-10-07",
-  "notes": "OmniProcessor 1.3.7 (required): swap a tube count's directions, find gaps in tube bins, long street names that fit on the classic reports, one summary card per site with day and time window pickers, and windows that fit small and scaled screens.",
+  "notes": "OmniProcessor 1.3.7 (required): swap a tube count's directions, find gaps in tube bins, Speed Stats from any tube file, San Jose two-box counts, long street names that fit, one summary card per site, and windows that fit small and scaled screens.",
   "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.7/OmniProcessor.v1.3.7.zip",
   "changelog": [
     {
@@ -14,7 +14,10 @@
         "Classic TMC reports: very long street names fit. The table headers shrink the name to fit, the diagram's east and west street labels stay inside the picture, and a title on three lines no longer crowds the diagram.",
         "Project summary: one card per intersection with a Day picker and a Time window picker, instead of a card for every day. The sites table lists each site once.",
         "Project summary: this run's counts can be merged into the project's existing summary. The newest one is found automatically on the Process page; Clear writes a summary of the run only.",
-        "Every window fits the screen with its buttons visible, also on small laptops and on displays scaled to 125 or 150 percent."
+        "Every window fits the screen with its buttons visible, also on small laptops and on displays scaled to 125 or 150 percent.",
+        "San Jose: a count recorded by one box per direction (two files, such as 1p.txt and 1s.txt) makes one workbook a day with both directions.",
+        "Speed Stats and the Redmond speed report work for any tube file. The posted limit is the file's own, typed, from an earlier count, the state DOT, OSM or the default; a file without one gets the standard Speed report, and the log names it.",
+        "The Processing type is a dropdown that shows what each type does."
       ]
     },
     {
@@ -340,5 +343,5 @@
       ]
     }
   ],
-  "sha256": "1404e30c299efc2fb3c5448fb8709ef4906035a0fa09fc9830c2111c6d7cc007"
+  "sha256": "c357a6229c9363b5a440c1e8a43fb196ab266f838bcb28421970ba3c7159273c"
 }
