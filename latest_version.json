@@ -2,13 +2,14 @@
   "latest_version": "1.3.8a",
   "min_supported": "1.3.8a",
   "release_date": "2026-10-07",
-  "notes": "OmniProcessor 1.3.8a (required): San Jose warns before using a regular 15-minute file (its 0-5 and 5-10 mph columns are estimated) and recommends Individual Vehicle reports, which need no speed bins.",
+  "notes": "OmniProcessor 1.3.8a (required): IDAX Quest maps (a switch at the top, off by default), and San Jose warns before using a regular 15-minute file (its 0-5 and 5-10 mph columns are estimated) and recommends Individual Vehicle reports, which need no speed bins.",
   "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.8a/OmniProcessor.v1.3.8a.zip",
   "changelog": [
     {
       "version": "1.3.8a",
       "date": "2026-10-07",
       "changes": [
+        "IDAX Quest maps: a switch at the top of the window, off by default. When it is on, project maps and site coordinates are also looked up on IDAX Quest (TMC map panel, tube Find Map, project names), and turning it on or off with files loaded searches again. The first time it asks for your own IDAX Quest email and password.",
         "San Jose: a regular 15-minute file (0-10 mph bottom bin) is flagged in red on the Process page and asked about before the run. Its 0-5 and 5-10 mph columns are estimated; everything else comes from the file.",
         "San Jose: Individual Vehicle reports give every number exactly and need no speed bins. 15-minute files exported with 5 mph bins are exact too."
       ]
@@ -365,5 +366,5 @@
       ]
     }
   ],
-  "sha256": "4008e5773f99384f9f608c735d1ecd6018c2748e5c60c1ff552e9c54a8c8c679"
+  "sha256": "478967f77b2ed7994be6886d82bdf4e4d21844c84cc1ddbcccb05538d63fd43c"
 }
