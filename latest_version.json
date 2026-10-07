@@ -1,10 +1,22 @@
 {
-  "latest_version": "1.3.6",
-  "min_supported": "1.3.6",
+  "latest_version": "1.3.7",
+  "min_supported": "1.3.7",
   "release_date": "2026-10-07",
-  "notes": "OmniProcessor 1.3.6 (required): the San Jose tube processing type, tube counts processed twice or from MetroCount's own folder now land right on CountVault, custom speed bins read correctly, and smaller fixes.",
-  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.6/OmniProcessor.v1.3.6.zip",
+  "notes": "OmniProcessor 1.3.7 (required): swap a tube count's directions, find gaps in tube bins, long street names that fit on the classic reports, one summary card per site with day and time window pickers, and windows that fit small and scaled screens.",
+  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.7/OmniProcessor.v1.3.7.zip",
   "changelog": [
+    {
+      "version": "1.3.7",
+      "date": "2026-10-07",
+      "changes": [
+        "Tube counts: Swap Directions (the site editor's Site tab, or the button next to Clear Edits for several sites) moves every vehicle to the other direction when a counter was set up the other way round. Every report, the HTML page and CountVault follow it.",
+        "Tube site editor, Bins tab: hover a bin to see both directions' counts. Find gaps outlines the bins that look like missing data (one direction dropping out, or nothing where the other days have traffic), and one click excludes them.",
+        "Classic TMC reports: very long street names fit. The table headers shrink the name to fit, the diagram's east and west street labels stay inside the picture, and a title on three lines no longer crowds the diagram.",
+        "Project summary: one card per intersection with a Day picker and a Time window picker, instead of a card for every day. The sites table lists each site once.",
+        "Project summary: this run's counts can be merged into the project's existing summary. The newest one is found automatically on the Process page; Clear writes a summary of the run only.",
+        "Every window fits the screen with its buttons visible, also on small laptops and on displays scaled to 125 or 150 percent."
+      ]
+    },
     {
       "version": "1.3.6",
       "date": "2026-10-07",
@@ -328,5 +340,5 @@
       ]
     }
   ],
-  "sha256": "b1c46182a730b4f4646d4d86a9d9b5638e2ee883d2aa4e37f822d12c4322eee7"
+  "sha256": "1404e30c299efc2fb3c5448fb8709ef4906035a0fa09fc9830c2111c6d7cc007"
 }
