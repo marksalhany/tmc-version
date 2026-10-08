@@ -1,10 +1,23 @@
 {
-  "latest_version": "1.3.8c",
-  "min_supported": "1.3.8c",
+  "latest_version": "1.3.8d",
+  "min_supported": "1.3.8d",
   "release_date": "2026-10-07",
-  "notes": "OmniProcessor 1.3.8c (required): the Classic reports follow the direction set in the app (a site set to E/W printed NB / SB), IDAX Quest maps (a switch at the top, off by default), and an update published while OmniProcessor is open shows a pop-up once nothing is processing.",
-  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.8c/OmniProcessor.v1.3.8c.zip",
+  "notes": "OmniProcessor 1.3.8d (required): tube counts no longer reach CountVault without their site or with the wrong length, a graph of both directions and the days on the report in the site editor, and a warning for files that are not in a project folder.",
+  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.8d/OmniProcessor.v1.3.8d.zip",
   "changelog": [
+    {
+      "version": "1.3.8d",
+      "date": "2026-10-07",
+      "changes": [
+        "Tube counts: the site editor's Save keeps the coordinates and limits found while it was open. A site opened in the editor before the Kapturrit search finished lost its coordinates on Save, so its count reached CountVault with no site and no link.",
+        "Tube counts on CountVault: the length is the dates the report keeps (a count with its first and last days left out showed 9 days instead of 7), and sites named \"Main, between A and B\" no longer get \"Unknown Reference\" in their names.",
+        "Tube counts: a day with every bin excluded is left out of every report, the same as unticking it on the Dates tab. The Modern reports printed it as a day of 0s and counted it in the ADT.",
+        "Tube site editor: the days on the report above every tab. A day with any bin left is on the report; hover a day for what is kept, click it to show it in the bins, right-click to leave it out or put it back. The Dates, Bins and Patching tabs follow each other both ways.",
+        "Graph: both directions of a tube count over every day, to see gaps at a glance (the Graph button in the tube table, in the site editor and for a patch source). The wheel zooms, a click on a day zooms to it, a right-click shows that bin in the editor; possible gaps are marked red.",
+        "Files outside a project folder (for example MetroCount's MTE Output folder) are flagged when they are loaded, and Process asks before running them: their project, map and CountVault study may not be found.",
+        "HTML reports and project summaries: every table sorts by its headers, the CountVault link with Log in and the account line is on every page, the contact email shows in full, a data type withheld from a site is left out of its figures, and a study's summary is named after the study."
+      ]
+    },
     {
       "version": "1.3.8c",
       "date": "2026-10-07",
@@ -375,5 +388,5 @@
       ]
     }
   ],
-  "sha256": "c9b5fa2f73f9a5116a3152cbef7415f917b53b4ffd1eb46a44beec5282b9d7f6"
+  "sha256": "ca025add0c04eae30e93aa5e2bed4725fd69541a35d66bf006baa5e514ec7fe8"
 }
