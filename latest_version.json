@@ -19,7 +19,8 @@
         "The company name is IDAX Traffic Data LLC on every report, HTML page, footnote and PDF, and in CountVault; the logo no longer carries the old name.",
         "Tube HTML reports leave out the data quality checks unless \"QC checks in the HTML\" is ticked on the Process page (off at every start).",
         "San Jose workbooks open on the Cover Page, with the project's PM from the Rainbow roster by full name and the project's stored name.",
-        "TMC reports longer than 12 hours: each table runs on to the next page instead of leaving a few rows alone on a nearly empty page (a 15-hour report is 6 pages instead of 9, with no pagination warning and no retries), and totals of 10,000 or more print in full instead of ####, also on 24-hour 7- and 8-leg reports."
+        "TMC reports longer than 12 hours: each table runs on to the next page instead of leaving a few rows alone on a nearly empty page (a 15-hour report is 6 pages instead of 9, with no pagination warning and no retries), and totals of 10,000 or more print in full instead of ####, also on 24-hour 7- and 8-leg reports.",
+        "Site History and the Client Manager's site and count searches list every site and count. They showed at most 500 (300 in the site picker), newest first, so older counts were missing until searched for."
       ]
     },
     {
@@ -392,5 +393,5 @@
       ]
     }
   ],
-  "sha256": "7e7cf69b52a422c55356e0e448eb4c911a9233a0b547a41c49d9f9eaec2be934"
+  "sha256": "bb22bf934c1ae9a39bb331159ec3a8a50631debc714a27249723c7435cda5fa0"
 }
