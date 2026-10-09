@@ -18,7 +18,8 @@
         "HTML reports and project summaries: every table sorts by its headers, the CountVault link with Log in and the account line is on every page, the contact email shows in full, a data type withheld from a site is left out of its figures, and a study's summary is named after the study.",
         "The company name is IDAX Traffic Data LLC on every report, HTML page, footnote and PDF, and in CountVault; the logo no longer carries the old name.",
         "Tube HTML reports leave out the data quality checks unless \"QC checks in the HTML\" is ticked on the Process page (off at every start).",
-        "San Jose workbooks open on the Cover Page, with the project's PM from the Rainbow roster by full name and the project's stored name."
+        "San Jose workbooks open on the Cover Page, with the project's PM from the Rainbow roster by full name and the project's stored name.",
+        "TMC reports longer than 12 hours: each table runs on to the next page instead of leaving a few rows alone on a nearly empty page (a 15-hour report is 6 pages instead of 9, with no pagination warning and no retries), and totals of 10,000 or more print in full instead of ####, also on 24-hour 7- and 8-leg reports."
       ]
     },
     {
@@ -391,5 +392,5 @@
       ]
     }
   ],
-  "sha256": "c454f0d48aa6b638f139a5089137cddad75a4dcdd647ee75e8feca80e0083a9a"
+  "sha256": "7e7cf69b52a422c55356e0e448eb4c911a9233a0b547a41c49d9f9eaec2be934"
 }
