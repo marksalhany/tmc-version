@@ -11,7 +11,10 @@
       "changes": [
         "TMC counts past midnight in two files: when a raw file dated the next day starts at 12:00 AM where an evening count stops at midnight (the 12:00 to 1:00 AM hour exported on its own), loading the files asks once whether to merge them. Yes makes one count on the evening's date that runs past midnight (for example 10:00 PM to 1:00 AM), the same as one raw file with all those hours. No keeps them separate.",
         "It only asks when the hours touch (the evening file reaches midnight and the next day's file starts at 12:00 AM), never when both days have the same count times. A next-day file with a morning count too keeps the morning as its own count.",
-        "The merged raw files are saved in a \"Merged past midnight\" folder next to the evening files. Loading the parent folder later does not load them twice."
+        "The merged raw files are saved in a \"Merged past midnight\" folder next to the evening files. Loading the parent folder later does not load them twice.",
+        "Client Manager: right-click a project (or one of its study rows) and pick \"Remove grant from <customer>\" to take that customer's grant for the project away. It asks once, naming the customer and the project, and the holds inside that grant go with it. When a wider grant (a firm, a state, a site) still gives the customer the project, the app says what gives it and offers to hold the project back. Manage Customer's Revoke Selected works the same way. On CountVault the same removal is the x on a \"Granted to\" badge and \"Remove grant\" in Released data.",
+        "Project firms: the Rainbow roster is read from every project tab of a state's sheet. Projects on the \"WA-Spokane Projects\" tab had a project number and no firm.",
+        "Tube counts: a study that gets its project number from the Kapturrit map name afterwards gets its firm too."
       ]
     },
     {
@@ -402,5 +405,5 @@
       ]
     }
   ],
-  "sha256": "3d354c16176af6ec41d2cdbb582397d04ceaf15aa60b5b27ac10d16889fc4170"
+  "sha256": "db0a70cc6021825750302a5751a4fc534b1d295874b91d5b86a1d124b34624a3"
 }
