@@ -1,10 +1,23 @@
 {
-  "latest_version": "1.3.9",
-  "min_supported": "1.3.9",
-  "release_date": "2026-10-09",
-  "notes": "OmniProcessor 1.3.9 (required): when the hour after midnight of a TMC count came as its own file dated the next day, loading the files offers to merge it into the evening count, so the report runs past midnight on the evening's date.",
-  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.9/OmniProcessor.v1.3.9.zip",
+  "latest_version": "1.3.10",
+  "min_supported": "1.3.10",
+  "release_date": "2026-10-13",
+  "notes": "OmniProcessor 1.3.10 (required): on 5-leg and some 6-leg intersections the report's Pedestrians (Crossing Leg) tables left the diagonal leg's crosswalk out. Fixed. Re-run any 5-leg or 6-leg report made before this version when the diagonal leg has a crosswalk.",
+  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.10/OmniProcessor.v1.3.10.zip",
   "changelog": [
+    {
+      "version": "1.3.10",
+      "date": "2026-10-13",
+      "changes": [
+        "TMC reports, 5-leg and 6-leg intersections: the Pedestrians (Crossing Leg) tables show the diagonal leg's crosswalk. Before, on every 5-leg intersection and on 6-leg intersections whose two diagonal legs are side by side (NE and SE, SE and SW, SW and NW, NE and NW), the diagonal leg's pedestrians and crosswalk bikes were in no column: the column was headed with the opposite leg (SE for a NW leg) and showed 0, the interval rows did not add up to the Count Total, and the Peak Hour row of the peak table was short by the same crossings.",
+        "What was right all along: the page 1 diagram, every vehicle, heavy vehicle and road bike number, the Modern report, CountVault's own pages, and every 3-leg and 4-leg report.",
+        "Re-run any 5-leg or 6-leg report made before this version when the diagonal leg has a crosswalk.",
+        "5-leg reports: the all-intervals Heavy Vehicle / Bicycles / Pedestrians table is headed with the intersection's own diagonal (it kept SEB and NW from the template on the other three 5-leg layouts; the numbers under it were right).",
+        "6-leg with opposite diagonal legs, 7-leg and 8-leg reports: the diagonal pedestrian columns now run NE, SE, SW, NW. Their numbers were already right.",
+        "Modern report: a crosswalk counted on a side with no street name keeps its column and stays in the totals.",
+        "Loading a raw file with crossings on a leg its report has no pedestrian column for writes a WARNING line in the activity log."
+      ]
+    },
     {
       "version": "1.3.9",
       "date": "2026-10-09",
@@ -405,5 +418,5 @@
       ]
     }
   ],
-  "sha256": "db0a70cc6021825750302a5751a4fc534b1d295874b91d5b86a1d124b34624a3"
+  "sha256": "a4d2dc1f2c8bd6842e8b248aefd1030ec0c48649fcade9519708fc59caf02282"
 }
