@@ -15,7 +15,12 @@
         "5-leg reports: the all-intervals Heavy Vehicle / Bicycles / Pedestrians table is headed with the intersection's own diagonal (it kept SEB and NW from the template on the other three 5-leg layouts; the numbers under it were right).",
         "6-leg with opposite diagonal legs, 7-leg and 8-leg reports: the diagonal pedestrian columns now run NE, SE, SW, NW. Their numbers were already right.",
         "Modern report: a crosswalk counted on a side with no street name keeps its column and stays in the totals.",
-        "Loading a raw file with crossings on a leg its report has no pedestrian column for writes a WARNING line in the activity log."
+        "Loading a raw file with crossings on a leg its report has no pedestrian column for writes a WARNING line in the activity log.",
+        "Tube counts, Remove high speed outliers: works on every file type (Individual Vehicle Reports and 15M files) and in the Classic reports too. It was skipped for every 15M file and never reached the Classic reports. The rule is per day and direction now: the few vehicles sitting 15+ mph above the rest of that day's speeds, with empty speed bins in between, move into the top bin of the rest (at most 1 vehicle in 100 of the day, 2 on a quiet day). Volumes and classes never change, and the activity log lists what moved.",
+        "Settings > Tube counts: the row is named Speed clean-up. Fill data gaps is greyed: it never filled anything on any file type. Fill a gap on the site editor's Patching tab.",
+        "Posted limits from OpenStreetMap: the street is read out of names like \"Glenn Way SW between SW Oregon St and 44th Ave SW\" or \"NE 95th St At Bridge over Bear Creek\", the search goes farther along the street when the segment at the tubes has no limit (and answers only when every tagged segment in reach agrees), a name no road answers to takes the road the pin sits on when it is the only road around, and the limit of the next road over or of a ramp is never taken. Checked on the 106 stored counts with a known limit: 99 right (75 before), 2 wrong (1 before), 5 without an answer (30 before).",
+        "Posted limits: one failed OpenStreetMap request no longer switches the search off for the whole batch (the request is tried again in halves and on the service's other servers; the two mirrors that no longer answer are not waited on). The Find Map button asks OpenStreetMap again instead of reading the answers of the last 30 days.",
+        "Posted limits from the site database: a file loaded again gets the limit it was stored with even before its map is found, and when today's search has no answer the limit an earlier search stored for the site is used."
       ]
     },
     {
@@ -418,5 +423,5 @@
       ]
     }
   ],
-  "sha256": "a4d2dc1f2c8bd6842e8b248aefd1030ec0c48649fcade9519708fc59caf02282"
+  "sha256": "f1064950adc3ba4564261b309750beb253c64397f79ddd0f79f50209914d6005"
 }
