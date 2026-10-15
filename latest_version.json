@@ -2,7 +2,7 @@
   "latest_version": "1.3.13",
   "min_supported": "1.3.11",
   "release_date": "2026-10-15",
-  "notes": "OmniProcessor 1.3.13 (optional): MTE tube .txt files made in EC0 File Buddy open on Sites & Import by themselves, ready for you to check and process. It installs the next time you close OmniProcessor.",
+  "notes": "OmniProcessor 1.3.13 (optional): MTE tube .txt files made in EC0 File Buddy open on Sites & Import by themselves, and the new SeaTac processing type prints the City of SeaTac's Asset ID and Counter ID on the tube reports. It installs the next time you close OmniProcessor.",
   "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.13/OmniProcessor.v1.3.13.zip",
   "changelog": [
     {
@@ -12,7 +12,10 @@
         "Tube files from EC0 File Buddy open by themselves: when EC0 File Buddy finishes making MTE tube .txt files, OmniProcessor comes to the front on Sites & Import with those files loaded, the same as picking them with Select Files.",
         "Nothing is processed until you click Process & Export.",
         "If a run is going when the files arrive, they load once it finishes.",
-        "Files already loaded are skipped, and a Bellevue .1.txt file still pairs with its 7-day file."
+        "Files already loaded are skipped, and a Bellevue .1.txt file still pairs with its 7-day file.",
+        "New SeaTac processing type (Process & Export > Tube counts): every report prints the City of SeaTac's Asset ID and Counter ID, with the site's lat / long as the Specific Location, in the layout the City gets (Classic and Modern). Files are named like Standard.",
+        "Picking SeaTac opens a window for the IDs, already filled from the City's Traffic Data Intake Form when it is in the count's folder (found by what it says, whatever the file is called; a row whose location is far from its site's pin is marked to check). You can also paste a spreadsheet column or text copied out of the form, or pick a form saved elsewhere with Read intake form. Process asks again if a site is still missing its IDs.",
+        "CountVault shows a SeaTac count's Asset ID and Counter ID, and its downloads print them too."
       ]
     },
     {
@@ -458,8 +461,8 @@
       ]
     }
   ],
-  "sha256": "21c7c276f52b0e0e38dba2eb957d6762838967fe29cd464c4598ba4cb81bc020",
-  "build": "2026-10-15T18:36:04Z",
+  "sha256": "a25d89908c8ff9deba83b5cbaea37c030cfbd1b13cfcb66caabc3511bdd4b435",
+  "build": "2026-10-15T20:58:35Z",
   "mandatory": false,
-  "signature": "jhAilf/b1cTgKX1FP0Ad+HQuW7QtUfU8SKLN/P9KAzPQHyF8OPWoM5HajWapsTU3BGMlH/Hb2dVLVT0ISOCmAQ=="
+  "signature": "3ZjzgfE39PSS4EClSEO90c/vIiIaaPoa6Nvkem1XxJe5SuBa8M2kKb/Nq/H6u5eNfkoDPHNNfck7Stg4NpjSAg=="
 }
