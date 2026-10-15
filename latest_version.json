@@ -1,10 +1,20 @@
 {
-  "latest_version": "1.3.12",
+  "latest_version": "1.3.13",
   "min_supported": "1.3.11",
-  "release_date": "2026-10-14",
-  "notes": "OmniProcessor 1.3.12 (optional): QC map links work for intersections coded on the other axis, a map made on another computer finds its tube files, and QC map warnings say what to check. It installs the next time you close OmniProcessor.",
-  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.12/OmniProcessor.v1.3.12.zip",
+  "release_date": "2026-10-15",
+  "notes": "OmniProcessor 1.3.13 (optional): MTE tube .txt files made in EC0 File Buddy open on Sites & Import by themselves, ready for you to check and process. It installs the next time you close OmniProcessor.",
+  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.13/OmniProcessor.v1.3.13.zip",
   "changelog": [
+    {
+      "version": "1.3.13",
+      "date": "2026-10-15",
+      "changes": [
+        "Tube files from EC0 File Buddy open by themselves: when EC0 File Buddy finishes making MTE tube .txt files, OmniProcessor comes to the front on Sites & Import with those files loaded, the same as picking them with Select Files.",
+        "Nothing is processed until you click Process & Export.",
+        "If a run is going when the files arrive, they load once it finishes.",
+        "Files already loaded are skipped, and a Bellevue .1.txt file still pairs with its 7-day file."
+      ]
+    },
     {
       "version": "1.3.12",
       "date": "2026-10-14",
@@ -448,8 +458,8 @@
       ]
     }
   ],
-  "sha256": "3d67823a45f3d285f518056063c708a0f9edfb7523eed12408d1d43d6b884f05",
-  "build": "2026-10-15T00:25:22Z",
+  "sha256": "21c7c276f52b0e0e38dba2eb957d6762838967fe29cd464c4598ba4cb81bc020",
+  "build": "2026-10-15T18:36:04Z",
   "mandatory": false,
-  "signature": "07rdrljdFrc5etM4vmyDZ9QR6M2KCy0QfRKK86c97/g75CTLcPO7NoOF1vo22T80VLZXdDAED0vtOyLt5NBBCA=="
+  "signature": "jhAilf/b1cTgKX1FP0Ad+HQuW7QtUfU8SKLN/P9KAzPQHyF8OPWoM5HajWapsTU3BGMlH/Hb2dVLVT0ISOCmAQ=="
 }
