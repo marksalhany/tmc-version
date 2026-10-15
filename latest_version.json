@@ -2,7 +2,7 @@
   "latest_version": "1.3.12",
   "min_supported": "1.3.11",
   "release_date": "2026-10-14",
-  "notes": "OmniProcessor 1.3.12 (optional): QC map links work for intersections coded on the other axis, and a map made on another computer finds its tube files. It installs the next time you close OmniProcessor.",
+  "notes": "OmniProcessor 1.3.12 (optional): QC map links work for intersections coded on the other axis, a map made on another computer finds its tube files, and QC map warnings say what to check. It installs the next time you close OmniProcessor.",
   "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.12/OmniProcessor.v1.3.12.zip",
   "changelog": [
     {
@@ -12,7 +12,10 @@
         "QC map: a map made on another computer now finds its tube files in your Dropbox. Before, Keep could say \"Nothing on this map can be linked on this PC\" even though the files were there.",
         "QC map: intersections that have a street coded on the other axis (a route coded N/S where it runs east-west) now get their links suggested, and dragging between the right legs no longer warns that a leg faces away.",
         "QC map: when you turn a diagram (Alt + drag) to line it up with its streets, its links follow. Turning a diagram just to make room does not change its links.",
-        "QC map: the + handles and link lines sit on the legs of a turned diagram again (they were drawn too far out)."
+        "QC map: the + handles and link lines sit on the legs of a turned diagram again (they were drawn too far out).",
+        "QC map warnings say what to check: the leg to use instead, a street that looks coded on the other axis in the raw file, a tube file that may still be syncing, or a map made again since it opened.",
+        "QC map: a link whose counts fit other legs, or fit with one tube's directions swapped, says so in its popup.",
+        "QC map: the Flows panel lists sites whose legs do not line up with their street, and what to do about it."
       ]
     },
     {
@@ -445,8 +448,8 @@
       ]
     }
   ],
-  "sha256": "dd4af351f5ab39bf6711ce46c97388b14461705e320979f6ae3a3744db624bcf",
-  "build": "2026-10-14T23:40:39Z",
+  "sha256": "3d67823a45f3d285f518056063c708a0f9edfb7523eed12408d1d43d6b884f05",
+  "build": "2026-10-15T00:25:22Z",
   "mandatory": false,
-  "signature": "FkxYXP7GXu6tj7STUbKycoC5UAK0wftloDGVafa0TPm4rNiZM2N5vVsiP5ADct2Cs4aLWBrtIGHivTx3aLQ5BQ=="
+  "signature": "07rdrljdFrc5etM4vmyDZ9QR6M2KCy0QfRKK86c97/g75CTLcPO7NoOF1vo22T80VLZXdDAED0vtOyLt5NBBCA=="
 }
