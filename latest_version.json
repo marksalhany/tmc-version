@@ -2,7 +2,7 @@
   "latest_version": "1.3.13",
   "min_supported": "1.3.11",
   "release_date": "2026-10-15",
-  "notes": "OmniProcessor 1.3.13 (optional): MTE tube .txt files made in EC0 File Buddy open on Sites & Import by themselves, and the new SeaTac processing type prints the City of SeaTac's Asset ID and Counter ID on the tube reports. It installs the next time you close OmniProcessor.",
+  "notes": "OmniProcessor 1.3.13 (optional): MTE tube .txt files made in EC0 File Buddy open on Sites & Import by themselves, the new SeaTac processing type prints the City of SeaTac's Asset ID and Counter ID on the tube reports, and TMC counts can be written as MS2 import files. It installs the next time you close OmniProcessor.",
   "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.13/OmniProcessor.v1.3.13.zip",
   "changelog": [
     {
@@ -15,7 +15,10 @@
         "Files already loaded are skipped, and a Bellevue .1.txt file still pairs with its 7-day file.",
         "New SeaTac processing type (Process & Export > Tube counts): every report prints the City of SeaTac's Asset ID and Counter ID, with the site's lat / long as the Specific Location, in the layout the City gets (Classic and Modern). Files are named like Standard.",
         "Picking SeaTac opens a window for the IDs, already filled from the City's Traffic Data Intake Form when it is in the count's folder (found by what it says, whatever the file is called; a row whose location is far from its site's pin is marked to check). You can also paste a spreadsheet column or text copied out of the form, or pick a form saved elsewhere with Read intake form. Process asks again if a site is still missing its IDs.",
-        "CountVault shows a SeaTac count's Asset ID and Counter ID, and its downloads print them too."
+        "CountVault shows a SeaTac count's Asset ID and Counter ID, and its downloads print them too.",
+        "MS2 import files for TMC counts (Process & Export > TMC intersections > Output: MS2 import files): each count goes into the MS2 \"TMC Advanced\" Excel template that ODOT's MS2 imports, one file per count date, in an MS2 folder in the output folder. CountVault and the QC map get the counts as usual. Tick Also write the regular reports to get the usual reports too.",
+        "MS2 setup: load the agency's MS2 intersection list and each site gets its MS2 Intersection ID from its map pin and street names (or type it). When MS2 draws a leg on a diagonal that the count called N, S, E or W, the legs are laid onto MS2's and every turn is named for the legs it joins. Name the classification tabs the agency's MS2 uses (Car, and heavy vehicles and bikes on their own tabs if wanted).",
+        "Every MS2 file is read back and checked against MS2's import rules and the count's own totals. Its numbers are the report's: every vehicle, heavy vehicles, pedestrians and bikes in crosswalks, road bikes."
       ]
     },
     {
@@ -461,8 +464,8 @@
       ]
     }
   ],
-  "sha256": "a25d89908c8ff9deba83b5cbaea37c030cfbd1b13cfcb66caabc3511bdd4b435",
-  "build": "2026-10-15T20:58:35Z",
+  "sha256": "8f397e0f9ea83a2ae5dbe7edb6a32cae4419c01a89c5cee37d20bd41a031ab00",
+  "build": "2026-10-16T04:02:50Z",
   "mandatory": false,
-  "signature": "3ZjzgfE39PSS4EClSEO90c/vIiIaaPoa6Nvkem1XxJe5SuBa8M2kKb/Nq/H6u5eNfkoDPHNNfck7Stg4NpjSAg=="
+  "signature": "OwvAWOUf5XaHzVY2C8gIpgiNMQWr7C2Wh7ElXsAXzHHSgeuWn0GURfO7vkqcd7+5/ag86nrCBqjGBQL/N8gSCw=="
 }
