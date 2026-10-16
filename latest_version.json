@@ -2,7 +2,7 @@
   "latest_version": "1.3.13",
   "min_supported": "1.3.11",
   "release_date": "2026-10-15",
-  "notes": "OmniProcessor 1.3.13 (optional): MTE tube .txt files made in EC0 File Buddy open on Sites & Import by themselves, the new SeaTac processing type prints the City of SeaTac's Asset ID and Counter ID on the tube reports, and TMC counts can be written as MS2 import files. It installs the next time you close OmniProcessor.",
+  "notes": "OmniProcessor 1.3.13 (optional): MTE tube .txt files made in EC0 File Buddy open on Sites & Import by themselves, the new SeaTac processing type prints the City of SeaTac's Asset ID and Counter ID on the tube reports, TMC counts can be written as MS2 import files, and a tube file with a TAB in a total line gets correct Classic reports. It installs the next time you close OmniProcessor.",
   "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.13/OmniProcessor.v1.3.13.zip",
   "changelog": [
     {
@@ -18,7 +18,8 @@
         "CountVault shows a SeaTac count's Asset ID and Counter ID, and its downloads print them too.",
         "MS2 import files for TMC counts (Process & Export > TMC intersections > Output: MS2 import files): each count goes into the MS2 \"TMC Advanced\" Excel template that ODOT's MS2 imports, one file per count date, in an MS2 folder in the output folder. CountVault and the QC map get the counts as usual. Tick Also write the regular reports to get the usual reports too.",
         "MS2 setup: load the agency's MS2 intersection list and each site gets its MS2 Intersection ID from its map pin and street names (or type it). When MS2 draws a leg on a diagonal that the count called N, S, E or W, the legs are laid onto MS2's and every turn is named for the legs it joins. Name the classification tabs the agency's MS2 uses (Car, and heavy vehicles and bikes on their own tabs if wanted).",
-        "Every MS2 file is read back and checked against MS2's import rules and the count's own totals. Its numbers are the report's: every vehicle, heavy vehicles, pedestrians and bikes in crosswalks, road bikes."
+        "Every MS2 file is read back and checked against MS2's import rules and the count's own totals. Its numbers are the report's: every vehicle, heavy vehicles, pedestrians and bikes in crosswalks, road bikes.",
+        "Tube counts: a MetroCount 15-minute file with a TAB at the start of a day's total line (MetroCount writes one now and then) now gets its Classic reports. Before, the run stopped with \"unexpected line among the 15-minute rows\" and wrote nothing, or printed 0 for that day's speed statistics and left that day out of the speed and class totals."
       ]
     },
     {
@@ -464,8 +465,8 @@
       ]
     }
   ],
-  "sha256": "a2beed00a3d9332e4abbfb5a1535165160ed2b29d1425bc425c73559710a5f3d",
-  "build": "2026-10-16T04:19:27Z",
+  "sha256": "9a5702287affc750ffb017ecab385f79611bffb70a84324d140555043af6540f",
+  "build": "2026-10-16T22:11:20Z",
   "mandatory": false,
-  "signature": "ViTDKf16ifad3rYdlVfXP4N+02UmWefDMlzYgMqbhfH2nj5FGNwGMJmR9Rohok2Y9FfWO4cYvj+h7NfJRXzUBw=="
+  "signature": "UXFfeOYH5+NW4LlJsU/Kq3ZnBNw8Cu0gIOBc2seniJyZgwjUIFsruREoyXz7nN700/SI9u2DJCKI3okrDbrCCw=="
 }
