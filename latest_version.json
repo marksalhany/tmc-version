@@ -2,7 +2,7 @@
   "latest_version": "1.3.14",
   "min_supported": "1.3.11",
   "release_date": "2026-10-16",
-  "notes": "OmniProcessor 1.3.14 (optional): drag files and folders onto the window to load them, split periods now show on every site that has them and can also write the full count's report in the same run, and the app warns when the disk is nearly full. It installs the next time you close OmniProcessor.",
+  "notes": "OmniProcessor 1.3.14 (optional): drag files and folders onto the window to load them, split periods now show on every site that has them and can also write the full count's report in the same run, and the app warns when the disk is nearly full. It installs the next time you close OmniProcessor. This build also keeps the posted speed limit of tube files from older MetroCount versions.",
   "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.14/OmniProcessor.v1.3.14.zip",
   "changelog": [
     {
@@ -16,7 +16,8 @@
         "A nearly full disk is now said out loud: a warning at start, a line in the log, and a question before a run when a drive OmniProcessor writes to has under 1 GB free (a full disk made runs stall and not save).",
         "Process page: when the CountVault customer list is empty, the line under it says why (for example, this computer has not finished downloading the team database yet).",
         "Setting up a computer: if the keys cannot be saved because the disk is full, the setup window says so.",
-        "Tube counts: a MetroCount 15-minute file with a TAB at the start of a day's total line gets its Classic reports (from the 1.3.13 update of 2026-10-16)."
+        "Tube counts: a MetroCount 15-minute file with a TAB at the start of a day's total line gets its Classic reports (from the 1.3.13 update of 2026-10-16).",
+        "Tube counts: MetroCount 15-minute exports titled \"15M_ALL_STATS_SPEED_STATS\" (written by older MetroCount versions) are read as SPEED STATS exports. Before, they were read as plain exports and the posted speed limit in the file was dropped from the stored count."
       ]
     },
     {
@@ -479,8 +480,8 @@
       ]
     }
   ],
-  "sha256": "1d0e2e5a05d5862ed1ee48d2e6bce19fc2560d82faacb4f38a98c4ccbee2bad2",
-  "build": "2026-10-17T00:29:13Z",
+  "sha256": "a198735a4ff11d08264fc141813606cc474c968734b2342b29015c08677d8730",
+  "build": "2026-10-17T16:47:08Z",
   "mandatory": false,
-  "signature": "rrrCbpnRvsx9oGvk0nPNfv9/3txKrVxEL0GgH2jAnJKoR/GkW6yduZtfrgNt/pNkhJK+MMdRk4NM1VjUoFTMCQ=="
+  "signature": "D5RQ2jaqrrNz9sLQvjVypIdwz5bq3hBy+pWFUiyHPsAAJuZGxDTIEcYYvmLz5NDF+VfHcCwQPMybByFYJ4GVDw=="
 }
