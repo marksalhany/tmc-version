@@ -1,10 +1,24 @@
 {
-  "latest_version": "1.3.13",
+  "latest_version": "1.3.14",
   "min_supported": "1.3.11",
-  "release_date": "2026-10-15",
-  "notes": "OmniProcessor 1.3.13 (optional): MTE tube .txt files made in EC0 File Buddy open on Sites & Import by themselves, the new SeaTac processing type prints the City of SeaTac's Asset ID and Counter ID on the tube reports, TMC counts can be written as MS2 import files, and a tube file with a TAB in a total line gets correct Classic reports. It installs the next time you close OmniProcessor.",
-  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.13/OmniProcessor.v1.3.13.zip",
+  "release_date": "2026-10-16",
+  "notes": "OmniProcessor 1.3.14 (optional): drag files and folders onto the window to load them, split periods now show on every site that has them and can also write the full count's report in the same run, and the app warns when the disk is nearly full. It installs the next time you close OmniProcessor.",
+  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.14/OmniProcessor.v1.3.14.zip",
   "changelog": [
+    {
+      "version": "1.3.14",
+      "date": "2026-10-16",
+      "changes": [
+        "Drag and drop works: drag TMC raw files, MTE tube .txt files, .zip files or whole folders from File Explorer and drop them anywhere on the OmniProcessor window. They load on Sites & Import, the same as Select Files or Select Folder. Dropped during a run, they load when it finishes.",
+        "Split Periods: every site with splits is marked in the Sites table (a ✂ with the number of reports and their times), and the Split Periods button shows how many sites have splits.",
+        "Split Periods: new option \"Also write the full count\". Each file with splits also gets one report with all of its bins, named ..._Full, in the same run. The split reports stay exactly as they were.",
+        "CountVault and project pages: on-call counts processed from a folder outside the On-Call folder now land in their study when the folder carries the study's name (for example \"P-01634 - SDOT - Jackson St TMCs Data\"), and a street with a leading direction (S Jackson St) matches its study too. Each on-call study shows its own project manager and its own last processed time.",
+        "A nearly full disk is now said out loud: a warning at start, a line in the log, and a question before a run when a drive OmniProcessor writes to has under 1 GB free (a full disk made runs stall and not save).",
+        "Process page: when the CountVault customer list is empty, the line under it says why (for example, this computer has not finished downloading the team database yet).",
+        "Setting up a computer: if the keys cannot be saved because the disk is full, the setup window says so.",
+        "Tube counts: a MetroCount 15-minute file with a TAB at the start of a day's total line gets its Classic reports (from the 1.3.13 update of 2026-10-16)."
+      ]
+    },
     {
       "version": "1.3.13",
       "date": "2026-10-15",
@@ -465,8 +479,8 @@
       ]
     }
   ],
-  "sha256": "9a5702287affc750ffb017ecab385f79611bffb70a84324d140555043af6540f",
-  "build": "2026-10-16T22:11:20Z",
+  "sha256": "1d0e2e5a05d5862ed1ee48d2e6bce19fc2560d82faacb4f38a98c4ccbee2bad2",
+  "build": "2026-10-17T00:29:13Z",
   "mandatory": false,
-  "signature": "UXFfeOYH5+NW4LlJsU/Kq3ZnBNw8Cu0gIOBc2seniJyZgwjUIFsruREoyXz7nN700/SI9u2DJCKI3okrDbrCCw=="
+  "signature": "rrrCbpnRvsx9oGvk0nPNfv9/3txKrVxEL0GgH2jAnJKoR/GkW6yduZtfrgNt/pNkhJK+MMdRk4NM1VjUoFTMCQ=="
 }
