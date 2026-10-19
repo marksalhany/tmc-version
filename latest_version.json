@@ -2,7 +2,7 @@
   "latest_version": "1.3.14",
   "min_supported": "1.3.11",
   "release_date": "2026-10-19",
-  "notes": "OmniProcessor 1.3.14 (optional): the contact footer is back in its place on every page of a TMC report, a study with TMC and tube counts keeps each in its own folder with the project summary in Final Data named after the study, and speed reports get their missing line and a full-width summary page. It installs the next time you close OmniProcessor.",
+  "notes": "OmniProcessor 1.3.14 (optional): the contact footer is back in its place on every page of a TMC report, a study with TMC and tube counts keeps each in its own folder with the project summary in Final Data named after the study, on-call counts loaded from a .zip land in their study, and speed reports get their missing line and a full-width summary page. It installs the next time you close OmniProcessor.",
   "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.14/OmniProcessor.v1.3.14.zip",
   "changelog": [
     {
@@ -14,6 +14,7 @@
         "A study with both TMC and tube counts keeps each in its own folder in Final Data: TMCs (TMC for one intersection) and Tubes. A later run of the other kind finds the folders already there.",
         "Project summary: written to Final Data and named after the study (for example \"Bellevue - Fall 2026 Citywide Traffic Counts - Project Summary.html\"), never after the on-call program and never inside the Tubes folder.",
         "Project summary: the study's earlier summary is found wherever it is in the study folder, this run's counts are added to it, and it is moved to Final Data.",
+        "On-call projects: counts loaded from a .zip are stored at the zip's own place in the study folder, so CountVault puts them in their study (they went to the program's unplaced row). Counts processed from a copy outside the program folder go to the study their data folder names (for example \"P-07192 Grandview Data\").",
         "Speed reports: the line under \"Percentile Speed\" (above 50th / 85th / 95th) is on every table of every speed layout.",
         "Speed reports: the speed summary page spans the whole page again (with the hourly percentile columns on, it was printed at the narrower width of the day pages).",
         "Drag and drop works: drag TMC raw files, MTE tube .txt files, .zip files or whole folders from File Explorer and drop them anywhere on the OmniProcessor window. They load on Sites & Import, the same as Select Files or Select Folder. Dropped during a run, they load when it finishes.",
@@ -487,8 +488,8 @@
       ]
     }
   ],
-  "sha256": "288cb5de2a77e58685c8e96d2d45003627f8a9bd57f4f4b2b7106ab66d0c048d",
-  "build": "2026-10-19T20:21:12Z",
+  "sha256": "0f17d1e99b04a582da5bb007be15c3d563ea1a58946999fa7a8409a179a9aaeb",
+  "build": "2026-10-19T21:49:23Z",
   "mandatory": false,
-  "signature": "vTgKteDGdTtF7g+6Yksc7rNLnUj1CqJMSMCyBkVdpEyHmj4CLjNZB1B/gUnAGPbOzex6opO3kr0Ws+bFnSwECw=="
+  "signature": "BJ7igHZumeUZHYDeDQAP/wq8k2YqDQBxYafoK8B/oY6Smwndnny3KcdRdAj1ls9mc3caspRdTtY70+Ri2avBBw=="
 }
