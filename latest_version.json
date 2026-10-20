@@ -1,14 +1,19 @@
 {
   "latest_version": "1.3.14",
-  "min_supported": "1.3.11",
+  "min_supported": "1.3.14",
   "release_date": "2026-10-19",
-  "notes": "OmniProcessor 1.3.14 (optional): the contact footer is back in its place on every page of a TMC report, a study with TMC and tube counts keeps each in its own folder with the project summary in Final Data named after the study, on-call counts loaded from a .zip land in their study, and speed reports get their missing line and a full-width summary page. It installs the next time you close OmniProcessor.",
+  "notes": "OmniProcessor 1.3.14 (required): on-call study files get their own map from Kapturrit and IDAX Quest, a run asks first when intersections have no coordinates, Split Periods keeps each split's real end time, the same counts under another date replace the older record, and the map panel says when IDAX Quest could not be searched.",
   "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.14/OmniProcessor.v1.3.14.zip",
   "changelog": [
     {
       "version": "1.3.14",
       "date": "2026-10-19",
       "changes": [
+        "Project maps: the files of an on-call study get that study's own map, found among every map with the P-number on Kapturrit and IDAX Quest. A map named for another study of the same program is never taken (the Bellevue Newport High School counts were given the NK7 Validation map).",
+        "Before a run, OmniProcessor asks when intersections have no coordinates. Without them a count is left off the QC map and the project summary, and it does not reach CountVault.",
+        "Split Periods: a split reopened shows its real end time (4:00 PM, not 3:45 PM), the window no longer says the last 15 minutes are skipped, and Apply keeps the splits as they were. Time Range in the Sites table lists every report window in order.",
+        "The same counts processed again under another date (month and day swapped) replace the older record, and the activity log says which one.",
+        "Project maps: when IDAX Quest turns down the password saved on this computer, or does not answer, the map panel and Find Map now say so instead of \"No map found\", and the IDAX Quest sign-in box opens by itself. A search made while IDAX Quest is restarting waits a few seconds and tries again.",
         "TMC reports: the contact footer (name, phone, email) is back in its place, 0.25 in from the bottom of every page. Full pages pushed it down to the very edge of the paper, where it looked like part of the next page. Tables now always end above the footer; on longer counts a table continues on the next page.",
         "TMC reports of any length lay out cleanly: no near-empty page, a table's totals stay with its last rows, and a 1-hour count fits its tables on one page.",
         "A study with both TMC and tube counts keeps each in its own folder in Final Data: TMCs (TMC for one intersection) and Tubes. A later run of the other kind finds the folders already there.",
@@ -488,8 +493,8 @@
       ]
     }
   ],
-  "sha256": "0f17d1e99b04a582da5bb007be15c3d563ea1a58946999fa7a8409a179a9aaeb",
-  "build": "2026-10-19T21:49:23Z",
-  "mandatory": false,
-  "signature": "BJ7igHZumeUZHYDeDQAP/wq8k2YqDQBxYafoK8B/oY6Smwndnny3KcdRdAj1ls9mc3caspRdTtY70+Ri2avBBw=="
+  "sha256": "b5caec983759c025ce06b08564453efd80bbc38d24c5a5162f60706940903bca",
+  "build": "2026-10-20T22:13:23Z",
+  "mandatory": true,
+  "signature": "O9khGgEL/A7yU1GCONpKF6wxrx3rpgDenDdCxWBDNjaFY/0zKZI8NJuzrvYUGebThNNQRayTOTfnkKelvVFrBA=="
 }
