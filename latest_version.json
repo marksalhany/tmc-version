@@ -9,6 +9,8 @@
       "version": "1.3.14",
       "date": "2026-10-19",
       "changes": [
+        "Site History: a tube site whose city lookup failed gets its city the next time the History page opens, the same as intersections.",
+        "On-call programs whose studies sit in a Projects or Archive folder (the City of Bellevue's P-01410) give each count its own study name in project summaries and study lists, never \"Projects\".",
         "Project maps: the files of an on-call study get that study's own map, found among every map with the P-number on Kapturrit and IDAX Quest. A map named for another study of the same program is never taken (the Bellevue Newport High School counts were given the NK7 Validation map).",
         "Before a run, OmniProcessor asks when intersections have no coordinates. Without them a count is left off the QC map and the project summary, and it does not reach CountVault.",
         "Split Periods: a split reopened shows its real end time (4:00 PM, not 3:45 PM), the window no longer says the last 15 minutes are skipped, and Apply keeps the splits as they were. Time Range in the Sites table lists every report window in order.",
@@ -493,8 +495,8 @@
       ]
     }
   ],
-  "sha256": "b5caec983759c025ce06b08564453efd80bbc38d24c5a5162f60706940903bca",
-  "build": "2026-10-20T22:13:23Z",
-  "mandatory": true,
-  "signature": "O9khGgEL/A7yU1GCONpKF6wxrx3rpgDenDdCxWBDNjaFY/0zKZI8NJuzrvYUGebThNNQRayTOTfnkKelvVFrBA=="
+  "sha256": "8c1a38bcc5f6c1fe6632000cf6a61d9429dc073b69cd1c5a9b5d9f0cdf4c7782",
+  "build": "2026-10-21T21:50:05Z",
+  "mandatory": false,
+  "signature": "SyWj85qnooWKo3KKO6oAR2G7uRQ1jQgdyYNMURBJrhKBO+OWgt1SDFVbre1fAVYgLnGUdy/8iqNMe8D12+GuCQ=="
 }
