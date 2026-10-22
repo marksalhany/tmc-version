@@ -9,6 +9,8 @@
       "version": "1.3.14",
       "date": "2026-10-19",
       "changes": [
+        "Tube patching: a file replaced on disk by its own edited export (Export edited .txt) no longer prints its patched days as 0 on the Modern reports and CountVault. Its edits are in the file now, so they come off, and every run reads changed files again before it starts.",
+        "Tube counts: the new Output row on Process & Export picks which types (Volume, Speed, Class) get files. An unchecked type gets no files, and CountVault still releases it to the client.",
         "Tube patching: a file re-exported while it is loaded is read again whole. Patches from a date the new export added counted 0 vehicles (the per-direction counts patches read were the old export's).",
         "Tube counts: the Sites table's Dates column and the count dates chip show the dates on the report. A site with days left out or patched reads like \"09/30 - 10/06 (7 of 14)\" instead of the file's whole range.",
         "Site History: a tube site whose city lookup failed gets its city the next time the History page opens, the same as intersections.",
@@ -497,8 +499,8 @@
       ]
     }
   ],
-  "sha256": "1e001ff4441ed434dfd55a9fdb7fc7a41ae72aab3f9d5189ae59236f7357c176",
-  "build": "2026-10-22T00:53:23Z",
+  "sha256": "0be3bac8b64168b81f13e12740ae87aee4f5f34703d6b3bfc0faa6fdbfaf18e8",
+  "build": "2026-10-22T02:54:55Z",
   "mandatory": false,
-  "signature": "QI+aksyrkukaMgFe9XY0pt8h6QMBVkPpyJ/pixWyCJO2Fj2qum1yk2Lo02b/m8jTjXWevaf9atcciUYUGYgwBg=="
+  "signature": "F4X8XgoA6aPyxzh3782znyRCPza93PcYDF+HxYVghYfRKj1NAXcS/eKFRSGkeVYqxMRssR4XNf3ZKn25YtR5CQ=="
 }
