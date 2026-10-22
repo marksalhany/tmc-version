@@ -9,6 +9,7 @@
       "version": "1.3.14",
       "date": "2026-10-19",
       "changes": [
+        "Tube counts: the Sites table's Dates column and the count dates chip show the dates on the report. A site with days left out or patched reads like \"09/30 - 10/06 (7 of 14)\" instead of the file's whole range.",
         "Site History: a tube site whose city lookup failed gets its city the next time the History page opens, the same as intersections.",
         "On-call programs whose studies sit in a Projects or Archive folder (the City of Bellevue's P-01410) give each count its own study name in project summaries and study lists, never \"Projects\".",
         "Project maps: the files of an on-call study get that study's own map, found among every map with the P-number on Kapturrit and IDAX Quest. A map named for another study of the same program is never taken (the Bellevue Newport High School counts were given the NK7 Validation map).",
@@ -495,8 +496,8 @@
       ]
     }
   ],
-  "sha256": "8c1a38bcc5f6c1fe6632000cf6a61d9429dc073b69cd1c5a9b5d9f0cdf4c7782",
-  "build": "2026-10-21T21:50:05Z",
+  "sha256": "e382098d1862214dd9022a3ca1bd190b5a43462403d860f7fc12ad9962e46156",
+  "build": "2026-10-22T00:04:29Z",
   "mandatory": false,
-  "signature": "SyWj85qnooWKo3KKO6oAR2G7uRQ1jQgdyYNMURBJrhKBO+OWgt1SDFVbre1fAVYgLnGUdy/8iqNMe8D12+GuCQ=="
+  "signature": "3ePYkuPfRNUXTSh09lHy43T04zClMKWIa+0LWhKR3gXpkqzstMkKFwG0duM0NxXV8jsE2A07zZzERHw6s1XKCg=="
 }
