@@ -9,6 +9,10 @@
       "version": "1.3.14",
       "date": "2026-10-19",
       "changes": [
+        "Speed bins: the new Labels choice (Process & Export > Modern, and Settings > Tube counts) prints the bins as 0-9.99, 10-14.99 instead of 0-10, 10-15 on the Modern workbooks and PDFs and the HTML report. Only the labels change.",
+        "Speed bins: Edit bins opens a new, faster editor. Change a speed right in the table, drag a bin edge on the ruler, fill a range with bins of any size (for example 2 mph bins from 11 to 41), set the top bin, undo, and save bin sets.",
+        "Speed bins: picking a new Speed bin size or Top bin on the Modern card makes the custom bins uniform bins of that size, so Edit bins opens on them.",
+        "Modern speed reports with custom bins say Speed Bin Size: Custom (they said 5 mph).",
         "Tube patching: a file replaced on disk by its own edited export (Export edited .txt) no longer prints its patched days as 0 on the Modern reports and CountVault. Its edits are in the file now, so they come off, and every run reads changed files again before it starts.",
         "Tube counts: the new Output row on Process & Export picks which types (Volume, Speed, Class) get files. An unchecked type gets no files, and CountVault still releases it to the client.",
         "Tube patching: a file re-exported while it is loaded is read again whole. Patches from a date the new export added counted 0 vehicles (the per-direction counts patches read were the old export's).",
@@ -499,8 +503,8 @@
       ]
     }
   ],
-  "sha256": "0be3bac8b64168b81f13e12740ae87aee4f5f34703d6b3bfc0faa6fdbfaf18e8",
-  "build": "2026-10-22T02:54:55Z",
+  "sha256": "304bac6ef67861284efef2da41ee504bfeebc0f8a134e342e4852f10d8cbd3a5",
+  "build": "2026-10-22T16:37:42Z",
   "mandatory": false,
-  "signature": "F4X8XgoA6aPyxzh3782znyRCPza93PcYDF+HxYVghYfRKj1NAXcS/eKFRSGkeVYqxMRssR4XNf3ZKn25YtR5CQ=="
+  "signature": "IJf+DGv5PvxtdHfBs76lP97cPRvIyOcAZvbneGl1LafK3lOpPqK9Q7XTnuNi9IU55qf7S7CkU1G6F5wPlm6gCQ=="
 }
