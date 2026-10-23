@@ -9,6 +9,7 @@
       "version": "1.3.14",
       "date": "2026-10-19",
       "changes": [
+        "Project summaries and interactive intersection reports: the button that shows every counted hour of the day now reads Whole collection. It reads Whole window when you picked some hours.",
         "Project summaries: every intersection card can show any hours. Pick Full count, a counted window, AM peak, PM peak or your own start and end, and the figures, charts and drawing follow.",
         "Project summaries: the Intersection hours bar at the top sets the same hours on every intersection card, the sites table and the key figures at once.",
         "Project summaries: the drawing shows the peak hour of the hours picked or the whole window, for all vehicles, heavy or lights.",
@@ -510,8 +511,8 @@
       ]
     }
   ],
-  "sha256": "400d9bbc1beb18b3d130ba5ea6089d769bdc92495fca8f4c2fcf87fbec2ec309",
-  "build": "2026-10-23T01:48:33Z",
+  "sha256": "324417d66b4660563654ae648a7b794b578026c97436255efe315297c08ab081",
+  "build": "2026-10-23T16:08:52Z",
   "mandatory": false,
-  "signature": "U428XMKvYJFH1yTEaXoSBRRd0h4A8Fu/vyjwLnqMrMwQGGxaNW7PGmL8fu/MdAt8ZzusUrNwOHpjwfr6bPFMCA=="
+  "signature": "zFaYbJSSp6IA1Ixu/6HA119Bn7p8ATKAjoWd1NuORVdXq4cvEaOmy+WMQGlsNNDsomUMHuKk6wO9FtkU0PJbAw=="
 }
