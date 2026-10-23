@@ -48,7 +48,8 @@
         "Process page: when the CountVault customer list is empty, the line under it says why (for example, this computer has not finished downloading the team database yet).",
         "Setting up a computer: if the keys cannot be saved because the disk is full, the setup window says so.",
         "Tube counts: a MetroCount 15-minute file with a TAB at the start of a day's total line gets its Classic reports (from the 1.3.13 update of 2026-10-16).",
-        "Tube counts: MetroCount 15-minute exports titled \"15M_ALL_STATS_SPEED_STATS\" (written by older MetroCount versions) are read as SPEED STATS exports. Before, they were read as plain exports and the posted speed limit in the file was dropped from the stored count."
+        "Tube counts: MetroCount 15-minute exports titled \"15M_ALL_STATS_SPEED_STATS\" (written by older MetroCount versions) are read as SPEED STATS exports. Before, they were read as plain exports and the posted speed limit in the file was dropped from the stored count.",
+        "Project summaries list the sites by site number. When the counts were counted on different days, an Order by switch also puts the most recently counted sites first."
       ]
     },
     {
@@ -511,8 +512,8 @@
       ]
     }
   ],
-  "sha256": "324417d66b4660563654ae648a7b794b578026c97436255efe315297c08ab081",
-  "build": "2026-10-23T16:08:52Z",
+  "sha256": "b96fe38423fa1d472e72875238fbd2de6761c2440e7931b3311a02ee400da02c",
+  "build": "2026-10-23T18:30:34Z",
   "mandatory": false,
-  "signature": "zFaYbJSSp6IA1Ixu/6HA119Bn7p8ATKAjoWd1NuORVdXq4cvEaOmy+WMQGlsNNDsomUMHuKk6wO9FtkU0PJbAw=="
+  "signature": "x2BUMqJuOcMjuhjHry0aTFI4x7yDAa5xsYwFz+MhoHOc8saYZEgim9cw9ygVfW6hXzbopFMRHHEH5ZJP7xMVAg=="
 }
