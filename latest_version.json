@@ -2,13 +2,19 @@
   "latest_version": "1.3.14",
   "min_supported": "1.3.14",
   "release_date": "2026-10-19",
-  "notes": "OmniProcessor 1.3.14: project summaries show any hours of an intersection count, and files a client gets name the project without the IDAX project number.",
+  "notes": "OmniProcessor 1.3.14: Sites & Import checks every intersection and tube file as it loads (bins with nothing counted, spikes, other dates and the last count at the location, tube speeds, holidays) and marks what it finds with a ⚠.",
   "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.14/OmniProcessor.v1.3.14.zip",
   "changelog": [
     {
       "version": "1.3.14",
       "date": "2026-10-19",
       "changes": [
+        "Sites & Import: a ⚠ in the first column of the intersections table marks a file the new checks on load flagged. Hover the row for the list.",
+        "Intersection checks: a bin with no vehicles while the bins around it have traffic, an approach with no vehicles for 30 minutes or more, a period with nothing counted, and one bin far above or below both bins next to it.",
+        "Intersection checks: the same site counted on another date in the batch (weekday against weekday, Saturday against Saturday, Sunday against Sunday) and the last count at the location in the site database are compared over the hours both counts have.",
+        "Process asks once before a run when the checks flagged something. Yes is the default, so a count that is right still runs with one click.",
+        "Tube counts: the ⚠ now also lists the speed checks the QC workbook makes (85th between directions, a day's 85th or median off the rest of the study, max speed), holidays among the count dates, and the last study at the same tube site when its weekday volume differs a lot.",
+        "Settings > Checks on load: switch each check on or off and set how far apart two counts must be before they are flagged.",
         "Project summaries and interactive intersection reports: the button that shows every counted hour of the day now reads Whole collection. It reads Whole window when you picked some hours.",
         "Project summaries: every intersection card can show any hours. Pick Full count, a counted window, AM peak, PM peak or your own start and end, and the figures, charts and drawing follow.",
         "Project summaries: the Intersection hours bar at the top sets the same hours on every intersection card, the sites table and the key figures at once.",
@@ -512,8 +518,8 @@
       ]
     }
   ],
-  "sha256": "b96fe38423fa1d472e72875238fbd2de6761c2440e7931b3311a02ee400da02c",
-  "build": "2026-10-23T18:30:34Z",
+  "sha256": "ad0722c4852cb72b455dfe5d48956f4494ea178c77dc552651e36510e3883d8d",
+  "build": "2026-10-25T07:23:05Z",
   "mandatory": false,
-  "signature": "x2BUMqJuOcMjuhjHry0aTFI4x7yDAa5xsYwFz+MhoHOc8saYZEgim9cw9ygVfW6hXzbopFMRHHEH5ZJP7xMVAg=="
+  "signature": "tMGBumVWiMQhD9wMrT5l/kZxcIFvB0689yGhx2yIS5C7HWWltA3YNxrKrWjDksyopvk1oYhkGHQ68aCNAJP5Dw=="
 }
