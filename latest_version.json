@@ -9,6 +9,9 @@
       "version": "1.3.14",
       "date": "2026-10-19",
       "changes": [
+        "Process asks first when a tube count has no coordinates, as it does for an intersection, because a count without them does not reach CountVault. When IDAX Quest maps is off, the question says to switch it on.",
+        "Process & Export has a new box, Include bikes and peds in the system peak, that counts bikes and peds with the vehicles in every system peak the app makes: the System Peak Summary, the System Peak page of modern reports, History downloads and the QC map's Corridor Peak.",
+        "The System Peak Summary and the System Peak page of modern reports show the bikes and peds in the system peak hour, whichever way the peak was counted.",
         "On-call studies filed in a year folder (\"2025\", \"2026\") or inside a program's Archive or Projects folder find their own map, and their reports go to the study's own Final Data folder.",
         "Sites & Import: a ⚠ in the first column of the intersections table marks a file the new checks on load flagged. Hover the row for the list.",
         "Intersection checks: a bin with no vehicles while the bins around it have traffic, an approach with no vehicles for 30 minutes or more, a period with nothing counted, and one bin far above or below both bins next to it.",
@@ -519,8 +522,8 @@
       ]
     }
   ],
-  "sha256": "e9d48f346eff7e2e05eb9f51232373e2a854dc70374a8824113f4ed38d630807",
-  "build": "2026-10-25T14:40:10Z",
+  "sha256": "73d59bccb48f75f86d144b42d07efdfd05944b9c728ea09c6b375e69109a5930",
+  "build": "2026-10-27T17:14:31Z",
   "mandatory": false,
-  "signature": "FNwdKPR8PtbLyxx7LtjWfuhUc8PydrAbaLDyYCarxy+AYaqc4dF7LtQQIb7fjjsW4SUdMCVrQH4/v+oA7LGVAA=="
+  "signature": "Fpo4c5XLbxmh57Yn9ehEznO0pAk5AUMSj2XIp4Gzo7Y6187j+yJQQpPWDl8nN93i03HzEzxhpSpGttl57azhCw=="
 }
