@@ -9,6 +9,11 @@
       "version": "1.3.14",
       "date": "2026-10-19",
       "changes": [
+        "Tube site editor: tick Replace the original file next to Export edited .txt, and the export writes the edited file over the count's own .txt instead of saving a new _edited file. The old file is kept for 90 days in the .tmc_processor\\replaced_txt folder of your user folder, and the edits come off the site because they are in the file now. If a run is going, the file is replaced when the run finishes.",
+        "Replace the original file says why when it cannot replace a file: a date left out between other dates, another site patching from the file, or a single-vehicle file patched from a 15-minute file. The file stays as it was.",
+        "Tube site editor, Dates tab: click a box, then Shift+click another to tick or untick every date between them.",
+        "Tube site editor: right-click a date in the strip above the tabs to leave it out of the report or put it back. No menu comes up.",
+        "Export edited .txt: a single-vehicle file with dates left out no longer reads back with those dates as days counted with no vehicles, so its classic reports show the right date range.",
         "Process asks first when a tube count has no coordinates, as it does for an intersection, because a count without them does not reach CountVault. When IDAX Quest maps is off, the question says to switch it on.",
         "Process & Export has a new box, Include bikes and peds in the system peak, that counts bikes and peds with the vehicles in every system peak the app makes: the System Peak Summary, the System Peak page of modern reports, History downloads and the QC map's Corridor Peak.",
         "The System Peak Summary and the System Peak page of modern reports show the bikes and peds in the system peak hour, whichever way the peak was counted.",
@@ -522,8 +527,8 @@
       ]
     }
   ],
-  "sha256": "73d59bccb48f75f86d144b42d07efdfd05944b9c728ea09c6b375e69109a5930",
-  "build": "2026-10-27T17:14:31Z",
+  "sha256": "67b480f47ac9c65d2540479665d96b72eaf8d89fc6cc3353a0f80b5062d12f45",
+  "build": "2026-10-28T18:08:24Z",
   "mandatory": false,
-  "signature": "Fpo4c5XLbxmh57Yn9ehEznO0pAk5AUMSj2XIp4Gzo7Y6187j+yJQQpPWDl8nN93i03HzEzxhpSpGttl57azhCw=="
+  "signature": "T0R7ZZoYAmJM6sqFlUfpLtmmTzXG7DJbELJVmdHRcvizFYJQut6ExJ+yq7Lu5pIkIEt3diCeGiHhMKV6lDdWBw=="
 }
