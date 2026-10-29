@@ -9,6 +9,7 @@
       "version": "1.3.14",
       "date": "2026-10-19",
       "changes": [
+        "Merging into an existing QC map now saves over that map instead of writing a new qc_map_merged file each time. The map from before the merge is kept in the .tmc_processor folder of your user folder for 30 days.",
         "Tube site editor, Patching tab: dropping a whole day of bins takes a fraction of a second at any number of patches. It took 7 to 45 seconds on a long count, and a long patching session could close the app.",
         "The patch list shows one line for each run of patched bins (the bins patched in, the bins copied from, the source and the vehicles). Select runs and click Remove selected or press Delete, and double-click a run to see it on the left.",
         "The tube site editor opens about twice as fast, and Reset all edits takes under a second.",
@@ -531,8 +532,8 @@
       ]
     }
   ],
-  "sha256": "80fca4edafb05a748d876c3aba333c8462456467ac9dd04db4c41b4e148a773c",
-  "build": "2026-10-29T01:35:50Z",
+  "sha256": "568a95d7f41989eff18607ddeea0fc9af25ef3c531bec16ec53264dc2b468522",
+  "build": "2026-10-29T03:05:39Z",
   "mandatory": false,
-  "signature": "lR9eSNFteTTKDgjkxW9QM4W1uBm8QdKDlm+AvqZgZWAdz7ayxfNI0eccInDIGaDJqmL31/tLlsAr7dIeZ9VZCQ=="
+  "signature": "lMye5WvGHTL9sFZJfL1j8vBY9R+QZ9i0EZWZ0w3HkMQkIO27AL3kO4JhW/QEFnpdYCi7whDUVb80t0pYCvfQDQ=="
 }
