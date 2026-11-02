@@ -9,6 +9,9 @@
       "version": "1.3.14",
       "date": "2026-10-19",
       "changes": [
+        "Tube site editor: Export edited .txt (and Replace the original file) shows at once that it started: a moving bar and \"Exporting <file>\" with the seconds so far, the buttons wait until it is done, and the window no longer freezes while the file is written.",
+        "Tube counts: the Classic and the Modern sections of Process & Export each have their own Reports line (Volume, Speed, Class), so a run can write all three Classic reports and only the Modern Volume report, or any other mix. A Modern report that is off greys its options. The interactive HTML report has every type either style writes, and CountVault still gets all three, released as the Release row says. It replaces the single Output row.",
+        "Tube counts: files from a City of Bellevue on-call folder pick the Bellevue processing type by themselves (a type picked by hand stays).",
         "Tube files: when a loaded file can't be opened for a moment (Dropbox syncing it, or another program using it), its row no longer turns into \"Not a supported MTE .txt file\" for good. The row keeps what was read, and a file that can't be opened says \"Could not be opened just now\" and is read again when files are added, a run starts, or the file is dropped in again.",
         "Merging into an existing QC map now saves over that map instead of writing a new qc_map_merged file each time. The map from before the merge is kept in the .tmc_processor folder of your user folder for 30 days.",
         "Tube site editor, Patching tab: dropping a whole day of bins takes a fraction of a second at any number of patches. It took 7 to 45 seconds on a long count, and a long patching session could close the app.",
@@ -533,8 +536,8 @@
       ]
     }
   ],
-  "sha256": "13b81c497da90a46df800998fe645716f06e1f9fff8516c9ff40a9c6f8d7177a",
-  "build": "2026-11-02T19:21:46Z",
+  "sha256": "3e78e8866bb833384bc055fe02026cf96f01697dff1fee542be0011eed9429ce",
+  "build": "2026-11-02T22:36:54Z",
   "mandatory": false,
-  "signature": "ez+dqJJmCYhjVuXc7F/xmkGfjzEIsR3fZOJzGaz4ezktCpIpdr1tNLDD2QKgx6pGnitGQAuNJWt4iIXyK47gCQ=="
+  "signature": "NISlohShbF7hMo7paAyf8hYZUsoZcCFlEpEOME6B74agQB3Xmg3/oeRKXzr1Y1k3MuIfG8QEEzs5N2zGArHXAA=="
 }
