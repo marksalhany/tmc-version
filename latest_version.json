@@ -9,6 +9,8 @@
       "version": "1.3.14",
       "date": "2026-10-19",
       "changes": [
+        "Bellevue tube reports: class 7 now counts as class 2 on the Class report, automatically, the same as every other report type and the project summary.",
+        "Classic tube reports: a 6-digit class count in the study total (100,000 or more in one direction) no longer prints 0 for that direction's median, 85th, mean and pace.",
         "Tube site editor: Export edited .txt (and Replace the original file) shows at once that it started: a moving bar and \"Exporting <file>\" with the seconds so far, the buttons wait until it is done, and the window no longer freezes while the file is written.",
         "Tube counts: the Classic and the Modern sections of Process & Export each have their own Reports line (Volume, Speed, Class), so a run can write all three Classic reports and only the Modern Volume report, or any other mix. A Modern report that is off greys its options. The interactive HTML report has every type either style writes, and CountVault still gets all three, released as the Release row says. It replaces the single Output row.",
         "Tube counts: files from a City of Bellevue on-call folder pick the Bellevue processing type by themselves (a type picked by hand stays).",
@@ -536,8 +538,8 @@
       ]
     }
   ],
-  "sha256": "3e78e8866bb833384bc055fe02026cf96f01697dff1fee542be0011eed9429ce",
-  "build": "2026-11-02T22:36:54Z",
+  "sha256": "764f6619b0cad00f842bd5f00bc76de310fe573bf981755e5105e0750994abb3",
+  "build": "2026-11-03T19:05:52Z",
   "mandatory": false,
-  "signature": "NISlohShbF7hMo7paAyf8hYZUsoZcCFlEpEOME6B74agQB3Xmg3/oeRKXzr1Y1k3MuIfG8QEEzs5N2zGArHXAA=="
+  "signature": "Hye+DZ1H/7ps4zPCJ8A54B3Uim7UnBY/tNIfmllh33Cu53mSuGdtQ22R+Z3SmzN5tQ0vXjnjIELhVmIoCq0IBg=="
 }
