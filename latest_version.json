@@ -13,6 +13,7 @@
         "The Dir column on Sites & Import shows NB only (or SB / EB / WB only) for those sites; hover it to see why. Change it with the One-Way button below the table or on the Site tab of the site editor: As detected, Both directions, or one direction only. Settings > Checks on load turns the detection off.",
         "A count that looks one-way where OpenStreetMap has a two-way street is left as it is, and the warning icon says so.",
         "CountVault's report downloads for a tube count with edits (patches, excluded bins, swapped directions, one-way) are now built from the edited data, so they match the delivered reports.",
+        "Tube counts: twin sets. When one direction's box failed and only that side was reset later, the two files (same site, one direction each, different dates) load as one count on the earlier file's dates, the other file's days matched weekday for weekday. The Twin Set button below the table merges, shows the other file's dates instead, or separates them; the site editor's Site tab picks the day for each date. Settings > Checks on load turns merging on load off.",
         "Multi-date TMC runs write every report to one folder when no site has the same period on two dates. Tick 'Separate reports into date folders' for one folder per date; it locks on when two reports would have the same name.",
         "Cloud sync: the download of 15-minute data keeps its place and reconnects when the connection drops, so a computer that has fallen behind catches up instead of starting over.",
         "Project summaries fetch any 15-minute data this computer is missing before they are built, and the run log warns if the cloud cannot be reached.",
@@ -545,8 +546,8 @@
       ]
     }
   ],
-  "sha256": "e8a494a46f8cfa6d268ff86c42fd8ae5e115600a78b7ef75cd7e4d87ffa9f37f",
-  "build": "2026-11-04T21:48:29Z",
+  "sha256": "ddfb18e2680a922aa134194890b5dded3c11f53bcd7979ed69a7bec077d1b2b0",
+  "build": "2026-11-04T22:26:10Z",
   "mandatory": false,
-  "signature": "EJ6pj24aFzKjVtEnCx7nSVGOorAu3T+/UcQd8K7lYlfjvHM7I9D24lw4/yHf5p6dgVRYb+kqTf6fCE0vbZNBAg=="
+  "signature": "A3gMMorJOfqfw0vX95GeWUKALkTIUSb7HdLaAlXjmln14Z1WGhjVdcmKqraSE79iUcuP3YuuPM7XTzSHk4GRDQ=="
 }
