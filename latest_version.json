@@ -9,6 +9,10 @@
       "version": "1.3.14",
       "date": "2026-10-19",
       "changes": [
+        "Tube counts: one-way streets processed as two-way are now found on load. When the other direction has only stray triggers (under 3% of the vehicles, every day) and OpenStreetMap has a one-way street at the site, those triggers are set to 0 in every report, CountVault and Export edited .txt, the way MTExec's one-way setting writes the file. It also applies after patching, and to counts of any length.",
+        "The Dir column on Sites & Import shows NB only (or SB / EB / WB only) for those sites; hover it to see why. Change it with the One-Way button below the table or on the Site tab of the site editor: As detected, Both directions, or one direction only. Settings > Checks on load turns the detection off.",
+        "A count that looks one-way where OpenStreetMap has a two-way street is left as it is, and the warning icon says so.",
+        "CountVault's report downloads for a tube count with edits (patches, excluded bins, swapped directions, one-way) are now built from the edited data, so they match the delivered reports.",
         "Multi-date TMC runs write every report to one folder when no site has the same period on two dates. Tick 'Separate reports into date folders' for one folder per date; it locks on when two reports would have the same name.",
         "Cloud sync: the download of 15-minute data keeps its place and reconnects when the connection drops, so a computer that has fallen behind catches up instead of starting over.",
         "Project summaries fetch any 15-minute data this computer is missing before they are built, and the run log warns if the cloud cannot be reached.",
@@ -541,8 +545,8 @@
       ]
     }
   ],
-  "sha256": "bdbf96a4985ddae86384e28716ebd4172d8eddef6d5d0e7a8dc55205aa4c792d",
-  "build": "2026-11-03T20:51:52Z",
+  "sha256": "e8a494a46f8cfa6d268ff86c42fd8ae5e115600a78b7ef75cd7e4d87ffa9f37f",
+  "build": "2026-11-04T21:48:29Z",
   "mandatory": false,
-  "signature": "wKjJPbD+4qIl/UzY4x01KswPrSgYyxXg/56l1vVstwLbGAGke8uKNMKOQAetFtoKdrFt+aoIpwOQE/APuRUKBg=="
+  "signature": "EJ6pj24aFzKjVtEnCx7nSVGOorAu3T+/UcQd8K7lYlfjvHM7I9D24lw4/yHf5p6dgVRYb+kqTf6fCE0vbZNBAg=="
 }
