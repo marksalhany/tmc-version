@@ -9,6 +9,7 @@
       "version": "1.3.14",
       "date": "2026-10-19",
       "changes": [
+        "Tube counts: the Classic and the Modern sections of Process & Export each have their own Files line (PDF, Excel), so a run can write the Classic reports as PDFs and the Modern reports as Excel workbooks only, or any other mix. The interactive HTML report has its own row at the top.",
         "Tube counts: a one-way site or a merged twin set now shows the numbers the reports use everywhere in the app: the Vehicles column and count chip, the site editor's header, Directions line, Dates and Bins tabs, the day strip and the graph (a one-way site's other direction reads 0). The warning icon no longer lists speed or volume cautions about the direction the reports set to 0, or comparisons between the two directions.",
         "Tube counts: when a run ends, the one-way and twin set fixes are also written into the site's own .txt file, so the file itself is right: a one-way site's file gets the other direction's triggers set to 0, a twin set's first file gets the other file's direction on its dates and the other file moves into a \"Merged twin files\" folder next to it. The old file is kept 90 days in the .tmc_processor\replaced_txt folder of your user folder. Other edits stay edits. Settings > Tube counts > Fix the .txt files turns it off.",
         "Tube counts: the tools under the table are one row: Edit Site, Graph, then Directions (swap, one-way, twin set), Time Period (peak, school, custom hours, copy / paste, clear), Limits & Outputs and More menus, and Remove Selected / Clear Tubes on the right.",
@@ -549,8 +550,8 @@
       ]
     }
   ],
-  "sha256": "1b91f01367e3ad10eb1417d32538417c652cea43f7c77ec1e0992d88a02c814c",
-  "build": "2026-11-05T00:07:52Z",
+  "sha256": "8de858a9842e68caae8be5e68998418900e2554e8c70f06a3cd69c79d6792611",
+  "build": "2026-11-05T00:40:53Z",
   "mandatory": false,
-  "signature": "vFWKYtz+/vl4Cv3aHdvU2hbMvhTOgiCp4neuQPPlw8tx7El3YX0taa1/GQteXy9g/MmmS+PX23HWGHm6zu6wDw=="
+  "signature": "T0HikufwNUxOfA/04rtnPF7zsCOgpDBYzlsuORbkkc7kQD55sr55dIg7iuKStDoOXGE5Fn/QdTrSX5GfgCmLDA=="
 }
