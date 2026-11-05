@@ -9,6 +9,7 @@
       "version": "1.3.14",
       "date": "2026-10-19",
       "changes": [
+        "Tube counts: a one-way site or a merged twin set now shows the numbers the reports use everywhere in the app: the Vehicles column and count chip, the site editor's header, Directions line, Dates and Bins tabs, the day strip and the graph (a one-way site's other direction reads 0). The warning icon no longer lists speed or volume cautions about the direction the reports set to 0, or comparisons between the two directions.",
         "Tube counts: when a run ends, the one-way and twin set fixes are also written into the site's own .txt file, so the file itself is right: a one-way site's file gets the other direction's triggers set to 0, a twin set's first file gets the other file's direction on its dates and the other file moves into a \"Merged twin files\" folder next to it. The old file is kept 90 days in the .tmc_processor\replaced_txt folder of your user folder. Other edits stay edits. Settings > Tube counts > Fix the .txt files turns it off.",
         "Tube counts: the tools under the table are one row: Edit Site, Graph, then Directions (swap, one-way, twin set), Time Period (peak, school, custom hours, copy / paste, clear), Limits & Outputs and More menus, and Remove Selected / Clear Tubes on the right.",
         "Tube counts: one-way streets processed as two-way are now found on load. When the other direction has only stray triggers (under 3% of the vehicles, every day) and OpenStreetMap has a one-way street at the site, those triggers are set to 0 in every report, CountVault and Export edited .txt, the way MTExec's one-way setting writes the file. It also applies after patching, and to counts of any length.",
@@ -548,8 +549,8 @@
       ]
     }
   ],
-  "sha256": "5a315751a4eddf5d98b6f8062669d3132a1dc29d3eebeef819c7126e1371684b",
-  "build": "2026-11-04T22:56:37Z",
+  "sha256": "1b91f01367e3ad10eb1417d32538417c652cea43f7c77ec1e0992d88a02c814c",
+  "build": "2026-11-05T00:07:52Z",
   "mandatory": false,
-  "signature": "QpQ4c2nKIZs1oRv0ecktYEni2/0yE7BLbgwdqBbigZGipunDsCw0OLtk2c4k2UITQtYWwHxAPh6rsMyralGqBQ=="
+  "signature": "vFWKYtz+/vl4Cv3aHdvU2hbMvhTOgiCp4neuQPPlw8tx7El3YX0taa1/GQteXy9g/MmmS+PX23HWGHm6zu6wDw=="
 }
