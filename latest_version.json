@@ -9,6 +9,7 @@
       "version": "1.3.14",
       "date": "2026-10-19",
       "changes": [
+        "Tube counts, Redmond processing type: S-O and W-O sites now print Northbound and Eastbound first, like every other site and every other layout. Before this, the Classic reports of those sites had the two direction names the wrong way round (the numbers were right).",
         "Tube counts: the Classic and the Modern sections of Process & Export each have their own Files line (PDF, Excel), so a run can write the Classic reports as PDFs and the Modern reports as Excel workbooks only, or any other mix. The interactive HTML report has its own row at the top.",
         "Tube counts: a one-way site or a merged twin set now shows the numbers the reports use everywhere in the app: the Vehicles column and count chip, the site editor's header, Directions line, Dates and Bins tabs, the day strip and the graph (a one-way site's other direction reads 0). The warning icon no longer lists speed or volume cautions about the direction the reports set to 0, or comparisons between the two directions.",
         "Tube counts: when a run ends, the one-way and twin set fixes are also written into the site's own .txt file, so the file itself is right: a one-way site's file gets the other direction's triggers set to 0, a twin set's first file gets the other file's direction on its dates and the other file moves into a \"Merged twin files\" folder next to it. The old file is kept 90 days in the .tmc_processor\replaced_txt folder of your user folder. Other edits stay edits. Settings > Tube counts > Fix the .txt files turns it off.",
@@ -550,8 +551,8 @@
       ]
     }
   ],
-  "sha256": "8de858a9842e68caae8be5e68998418900e2554e8c70f06a3cd69c79d6792611",
-  "build": "2026-11-05T00:40:53Z",
+  "sha256": "f40c012d4b33f212265e60e576355bbb58db16f8ad9b374285474748c2777677",
+  "build": "2026-11-06T01:01:55Z",
   "mandatory": false,
-  "signature": "T0HikufwNUxOfA/04rtnPF7zsCOgpDBYzlsuORbkkc7kQD55sr55dIg7iuKStDoOXGE5Fn/QdTrSX5GfgCmLDA=="
+  "signature": "CJoabiBZPXcfr/WJUWtz6nKhmtycd5nnrGCBQmBhUnQxA8UZGCTGSDXydJIJLhHqniD2TeT2RXMQ5nib5Y15AQ=="
 }
