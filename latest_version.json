@@ -9,6 +9,10 @@
       "version": "1.3.14",
       "date": "2026-10-19",
       "changes": [
+        "Tube counts: a count delivered to two projects (one box at one spot, processed once for each project) is no longer taken for a copy of itself. Before this, processing the second project's file retired the first project's count, so it dropped off CountVault and that project's summary.",
+        "TMC map panel: IDAX Quest is searched at the same time as Kapturrit instead of after it, so a project map on IDAX Quest loads in a few seconds instead of up to half a minute. The map picked is the same.",
+        "Kapturrit: when Kapturrit stops taking the app's sign-in, the app signs in again by itself. Before this, every map search came back empty until the app was restarted.",
+        "Client Manager: Stay signed in is kept when the team database can't be read at start. It ends only on Sign out or when the account itself no longer works.",
         "Tube counts, Redmond processing type: S-O and W-O sites now print Northbound and Eastbound first, like every other site and every other layout. Before this, the Classic reports of those sites had the two direction names the wrong way round (the numbers were right).",
         "Tube counts: the Classic and the Modern sections of Process & Export each have their own Files line (PDF, Excel), so a run can write the Classic reports as PDFs and the Modern reports as Excel workbooks only, or any other mix. The interactive HTML report has its own row at the top.",
         "Tube counts: a one-way site or a merged twin set now shows the numbers the reports use everywhere in the app: the Vehicles column and count chip, the site editor's header, Directions line, Dates and Bins tabs, the day strip and the graph (a one-way site's other direction reads 0). The warning icon no longer lists speed or volume cautions about the direction the reports set to 0, or comparisons between the two directions.",
@@ -551,8 +555,8 @@
       ]
     }
   ],
-  "sha256": "f40c012d4b33f212265e60e576355bbb58db16f8ad9b374285474748c2777677",
-  "build": "2026-11-06T01:01:55Z",
-  "mandatory": false,
-  "signature": "CJoabiBZPXcfr/WJUWtz6nKhmtycd5nnrGCBQmBhUnQxA8UZGCTGSDXydJIJLhHqniD2TeT2RXMQ5nib5Y15AQ=="
+  "sha256": "07373ff0b79db8ce2b85fc6aa497d680e311435506b11a3c99f8e3d74821d2d1",
+  "build": "2026-11-12T00:47:07Z",
+  "mandatory": true,
+  "signature": "6DEqJszKcYRds/xe5VsQ2msb84qjr8p71CI+5K6jwxAAT1VC50wgcDXis1N6GcQJkvFTeMYVT5NFB3/MfRp/BA=="
 }
