@@ -555,8 +555,8 @@
       ]
     }
   ],
-  "sha256": "07373ff0b79db8ce2b85fc6aa497d680e311435506b11a3c99f8e3d74821d2d1",
-  "build": "2026-11-12T00:47:07Z",
-  "mandatory": true,
-  "signature": "6DEqJszKcYRds/xe5VsQ2msb84qjr8p71CI+5K6jwxAAT1VC50wgcDXis1N6GcQJkvFTeMYVT5NFB3/MfRp/BA=="
+  "sha256": "10dceab2c3d0f80821f7c771c701810ea03ea28db3c3a6980bc9d26461215ba2",
+  "build": "2026-11-17T20:42:45Z",
+  "mandatory": false,
+  "signature": "ltROm/zAakCZ5+NEAUFNqpbp9a6Q2CgCXFeSiNR/oD12KB3uU1xNTtNwkv0tNQmeFftc6a3t+o+KGW8NsReeCg=="
 }
