@@ -2,13 +2,16 @@
   "latest_version": "1.3.14",
   "min_supported": "1.3.14",
   "release_date": "2026-10-19",
-  "notes": "OmniProcessor 1.3.14: Sites & Import checks every intersection and tube file as it loads (bins with nothing counted, spikes, other dates and the last count at the location, tube speeds, holidays) and marks what it finds with a ⚠.",
+  "notes": "OmniProcessor 1.3.14: volume factors for tube counts (the site editor's Factor tab), and page 1 of 5-minute intersection reports shows the whole peak hour.",
   "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.14/OmniProcessor.v1.3.14.zip",
   "changelog": [
     {
       "version": "1.3.14",
       "date": "2026-10-19",
       "changes": [
+        "Tube counts: a volume factor per direction, for a tube that counted a steady share too few (or too many) vehicles where another count of the same traffic says how many. The site editor has a new Factor tab: type the factor, or type the other count and its time window and the app works the factor out from what the tube counted, or compare with an intersection count loaded in the same batch on the tube's street (hour by hour, with a chart). The factor goes into every Classic and Modern report, the HTML page and CountVault; speeds and class shares stay as measured; the .txt file is never changed. The reports can print one line about it (\"Note: Volumes adjusted by a factor of 1.12 based on a concurrent video count.\") or keep it internal: Settings > Tube counts > Volume factor note, or per site on the Factor tab.",
+        "Tube counts: after Find Map, a tube that reads steadily more than 10% off an intersection count loaded in the same batch on its street gets a line on its warning icon saying a volume factor would fit. Nothing is changed by itself. Settings > Checks on load turns it off.",
+        "Intersection reports with 5-minute bins: page 1's Peak Hour Count Summaries now lists the peak hour as four 15-minute rows that add up to the peak hour total. Before this it listed only the hour's first four 5-minute bins (20 minutes) over the full-hour total. Reports with 15-minute bins are unchanged.",
         "Tube counts: a count delivered to two projects (one box at one spot, processed once for each project) is no longer taken for a copy of itself. Before this, processing the second project's file retired the first project's count, so it dropped off CountVault and that project's summary.",
         "TMC map panel: IDAX Quest is searched at the same time as Kapturrit instead of after it, so a project map on IDAX Quest loads in a few seconds instead of up to half a minute. The map picked is the same.",
         "Kapturrit: when Kapturrit stops taking the app's sign-in, the app signs in again by itself. Before this, every map search came back empty until the app was restarted.",
@@ -555,8 +558,8 @@
       ]
     }
   ],
-  "sha256": "27753a6f526ba97d41e4048230af5472493c164c40721ffdf3a0b74801806211",
-  "build": "2026-11-17T21:37:24Z",
+  "sha256": "590c1e9273c2f24d66672b03f455862eed94f8e4247fb0d14b774dcd5d536bf2",
+  "build": "2026-11-20T23:58:21Z",
   "mandatory": false,
-  "signature": "IrWtGbZ9zmC+zcyeKOlA/rPXP33OKpl2lOFwYuhY0CjvOtEKI+0kYzp5QDC6//EBNAk6c5Mzljh254xEcyPyCg=="
+  "signature": "qaddfbP/Emr0xAwFzkwFW2XVOwRLxrA6YJnu++z/uPpleyi0tYg+w3pSwmZ/718VAFptJM7UfePi/EraWPsTBg=="
 }
