@@ -558,8 +558,8 @@
       ]
     }
   ],
-  "sha256": "590c1e9273c2f24d66672b03f455862eed94f8e4247fb0d14b774dcd5d536bf2",
-  "build": "2026-11-20T23:58:21Z",
+  "sha256": "5b66edacdce89dbf7d411673494b6dfda710961c9d2dc765825abe1bc63fc952",
+  "build": "2026-11-21T00:22:45Z",
   "mandatory": false,
-  "signature": "qaddfbP/Emr0xAwFzkwFW2XVOwRLxrA6YJnu++z/uPpleyi0tYg+w3pSwmZ/718VAFptJM7UfePi/EraWPsTBg=="
+  "signature": "XY+80obmJZvu7gFJUCLo+AE8b+oXbQOD9+L7b3xhY4z116HkrzGdlPpWa3tfzqpQuXTXPD0CVtyCMtsj64tNBA=="
 }
