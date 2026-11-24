@@ -561,8 +561,8 @@
       ]
     }
   ],
-  "sha256": "130c3cb87c596676787c827f240663d071adc3642cbedbb86e3372213d4e09ad",
-  "build": "2026-11-23T23:56:41Z",
-  "mandatory": false,
-  "signature": "BZF/AHXfD7ZYHW+gu124JnMqdYvyjmyBSWAAk5+m1tTk15CSgfUYMwjkzWpCfhmR+fJACpTiOAfQtnQ+Im/kAg=="
+  "sha256": "72f8475ba6aa48aec702fb09cda4ff26165f2eea69f92572085fdb62d6d24fe2",
+  "build": "2026-11-24T00:48:24Z",
+  "mandatory": true,
+  "signature": "qrNC39IT+CQ6uV4MRaTnQv5nByP+Hr50mmKVJ/aK3/34ajAcYIcqugDHMCCL8FU6WYkuD+4kOSbkyhznIQJuDg=="
 }
