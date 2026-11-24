@@ -2,13 +2,16 @@
   "latest_version": "1.3.14",
   "min_supported": "1.3.14",
   "release_date": "2026-10-19",
-  "notes": "OmniProcessor 1.3.14: volume factors for tube counts (the site editor's Factor tab), and page 1 of 5-minute intersection reports shows the whole peak hour.",
+  "notes": "OmniProcessor 1.3.14: every computer connects to CountVault by itself (no more \"this computer has no CountVault key\" before Process), and report files reach CountVault again.",
   "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.14/OmniProcessor.v1.3.14.zip",
   "changelog": [
     {
       "version": "1.3.14",
       "date": "2026-10-19",
       "changes": [
+        "Every set-up computer now connects to CountVault by itself. Before this, a computer could be set up without its CountVault key and nothing gave it one later: Process asked \"Rainbow not checked: this computer has no CountVault key\", its counts were stored with no firm, and its report files never reached CountVault. There is nothing to do: open OmniProcessor and it connects.",
+        "Report files (the PDF and Excel of each intersection count) reach CountVault again after a run. The step that sends them was being skipped, so almost none arrived after September. The files still on your computer go up by themselves over the next syncs.",
+        "Approving a new computer now hands over the CountVault key too, whichever computer approves it.",
         "Tube counts: a volume factor per direction, for a tube that counted a steady share too few (or too many) vehicles where another count of the same traffic says how many. The site editor has a new Factor tab: type the factor, or type the other count and its time window and the app works the factor out from what the tube counted, or compare with an intersection count loaded in the same batch on the tube's street (hour by hour, with a chart). The factor goes into every Classic and Modern report, the HTML page and CountVault; speeds and class shares stay as measured; the .txt file is never changed. The reports can print one line about it (\"Note: Volumes adjusted by a factor of 1.12 based on a concurrent video count.\") or keep it internal: Settings > Tube counts > Volume factor note, or per site on the Factor tab.",
         "Tube counts: after Find Map, a tube that reads steadily more than 10% off an intersection count loaded in the same batch on its street gets a line on its warning icon saying a volume factor would fit. Nothing is changed by itself. Settings > Checks on load turns it off.",
         "Intersection reports with 5-minute bins: page 1's Peak Hour Count Summaries now lists the peak hour as four 15-minute rows that add up to the peak hour total. Before this it listed only the hour's first four 5-minute bins (20 minutes) over the full-hour total. Reports with 15-minute bins are unchanged.",
@@ -558,8 +561,8 @@
       ]
     }
   ],
-  "sha256": "5b66edacdce89dbf7d411673494b6dfda710961c9d2dc765825abe1bc63fc952",
-  "build": "2026-11-21T00:22:45Z",
+  "sha256": "130c3cb87c596676787c827f240663d071adc3642cbedbb86e3372213d4e09ad",
+  "build": "2026-11-23T23:56:41Z",
   "mandatory": false,
-  "signature": "XY+80obmJZvu7gFJUCLo+AE8b+oXbQOD9+L7b3xhY4z116HkrzGdlPpWa3tfzqpQuXTXPD0CVtyCMtsj64tNBA=="
+  "signature": "BZF/AHXfD7ZYHW+gu124JnMqdYvyjmyBSWAAk5+m1tTk15CSgfUYMwjkzWpCfhmR+fJACpTiOAfQtnQ+Im/kAg=="
 }
