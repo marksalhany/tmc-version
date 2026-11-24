@@ -2,7 +2,7 @@
   "latest_version": "1.3.14",
   "min_supported": "1.3.14",
   "release_date": "2026-10-19",
-  "notes": "OmniProcessor 1.3.14: every computer connects to CountVault by itself (no more \"this computer has no CountVault key\" before Process), and report files reach CountVault again.",
+  "notes": "OmniProcessor 1.3.14: every computer connects to CountVault by itself, report files reach CountVault again, and a new computer is set up with your IDAX email (no waiting for an admin).",
   "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.14/OmniProcessor.v1.3.14.zip",
   "changelog": [
     {
@@ -10,6 +10,8 @@
       "date": "2026-10-19",
       "changes": [
         "Every set-up computer now connects to CountVault by itself. Before this, a computer could be set up without its CountVault key and nothing gave it one later: Process asked \"Rainbow not checked: this computer has no CountVault key\", its counts were stored with no firm, and its report files never reached CountVault. There is nothing to do: open OmniProcessor and it connects.",
+        "Setting up a new computer no longer waits for an admin. The \"Set up this computer\" window asks for your IDAX email, sends a code to it, and the code sets the computer up with every key it needs. An admin is asked only if you click Ask an admin; activation codes still work in the same Code field.",
+        "A computer that is set up and is missing one of its keys now gets it by itself.",
         "Report files (the PDF and Excel of each intersection count) reach CountVault again after a run. The step that sends them was being skipped, so almost none arrived after September. The files still on your computer go up by themselves over the next syncs.",
         "Approving a new computer now hands over the CountVault key too, whichever computer approves it.",
         "Tube counts: a volume factor per direction, for a tube that counted a steady share too few (or too many) vehicles where another count of the same traffic says how many. The site editor has a new Factor tab: type the factor, or type the other count and its time window and the app works the factor out from what the tube counted, or compare with an intersection count loaded in the same batch on the tube's street (hour by hour, with a chart). The factor goes into every Classic and Modern report, the HTML page and CountVault; speeds and class shares stay as measured; the .txt file is never changed. The reports can print one line about it (\"Note: Volumes adjusted by a factor of 1.12 based on a concurrent video count.\") or keep it internal: Settings > Tube counts > Volume factor note, or per site on the Factor tab.",
@@ -561,8 +563,8 @@
       ]
     }
   ],
-  "sha256": "72f8475ba6aa48aec702fb09cda4ff26165f2eea69f92572085fdb62d6d24fe2",
-  "build": "2026-11-24T00:48:24Z",
+  "sha256": "e9f71e77dd8971e6c5d5c2ffe785a1bdd124ab59fac672a0501af6c107cf3faa",
+  "build": "2026-11-24T01:11:36Z",
   "mandatory": true,
-  "signature": "qrNC39IT+CQ6uV4MRaTnQv5nByP+Hr50mmKVJ/aK3/34ajAcYIcqugDHMCCL8FU6WYkuD+4kOSbkyhznIQJuDg=="
+  "signature": "sWqCLN4Cqbnsiin6YLRwGQnyTyCgwXC7Iya5sLMOw5rdx0KXzOkgQseAIxhskvPShOa84AL4GCdd5Ef6cexjDA=="
 }
