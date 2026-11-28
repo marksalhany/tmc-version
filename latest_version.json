@@ -1,10 +1,20 @@
 {
-  "latest_version": "1.3.14",
+  "latest_version": "1.3.15",
   "min_supported": "1.3.14",
-  "release_date": "2026-10-19",
-  "notes": "OmniProcessor 1.3.14: City of San Jose intersection counts. Load the raw files and the City's workbooks come out, nothing to pick.",
-  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.14/OmniProcessor.v1.3.14.zip",
+  "release_date": "2026-11-27",
+  "notes": "OmniProcessor 1.3.15: screenline / ramp / driveway counts. Load an ATD screenline template or an IDAX driveway in-out workbook and Process writes the ramp deliverables and sends the counts to CountVault.",
+  "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.15/OmniProcessor.v1.3.15.zip",
   "changelog": [
+    {
+      "version": "1.3.15",
+      "date": "2026-11-27",
+      "changes": [
+        "Screenline / ramp / driveway counts (a new count type, schema v22). Load an IDAX ATD screenline template or a driveway in-out workbook on Sites & Import (drop it, or Select Folder / Select Files) and the app recognizes it on its own, apart from TMC raw files and tube .txt files. On Process it writes a Ramp Volume Count deliverable (Excel + PDF) for each site, the same layout as the ramp screenline reports we hand out, and sends each count to CountVault like a TMC or tube count. A driveway in-out workbook gets a sheet per direction (IN and OUT).",
+        "The deliverable has the peak hour, peak hour volume, PHF and peak hour % heavy for each count period, the per-15-minute Light / Heavy / Total with the rolling hour and the clock-hour totals, the period totals and % heavy, and a Both Periods total. The peak hour is the highest four 15-minute intervals in a row within each period; PHF = peak hour volume / (4 x the busiest 15-minute interval in that hour).",
+        "Coordinates come from the project's IDAX Quest / Kapturrit map (a site shares its Site # with its pin). A site with no pin is NOT sent to CountVault (the same no-coordinates rule as intersection and tube counts); its deliverable is still written and the run log lists it.",
+        "CountVault shows screenline counts everywhere the other kinds show: the site page, My Counts, the project page and project list, the map (a purple diamond), search, the dashboard, the project summary, and GIS export (a Screenline layer)."
+      ]
+    },
     {
       "version": "1.3.14",
       "date": "2026-10-19",
@@ -567,8 +577,8 @@
       ]
     }
   ],
-  "sha256": "288872419b5998775e9ad4565c2d7cf53e67496d07969a5df638ffdb94ae7d61",
-  "build": "2026-11-28T01:52:19Z",
+  "sha256": "f8765cc31ab987f988f9c3ea33e6164e4d76b032b849b790b17216c371ce5bf4",
+  "build": "2026-11-28T03:23:56Z",
   "mandatory": false,
-  "signature": "D/f8pBn6U3O8cftrz+hrvchd4duMuBce3viK9E663HwJo/1rk6GXbnRE9aI/sK8+fAm0RHUM9DamtDUzPk8QCQ=="
+  "signature": "6b0EyhCS4RDGk3Nu72+uNBF05VIUJLZBQ6sfd0E83/Hm5gVBqXHP3BH+P+QXeTbo7RtE26z3EKxLKDll6pn9CQ=="
 }
