@@ -2,13 +2,17 @@
   "latest_version": "1.3.14",
   "min_supported": "1.3.14",
   "release_date": "2026-10-19",
-  "notes": "OmniProcessor 1.3.14: every computer connects to CountVault by itself, report files reach CountVault again, and a new computer is set up with your IDAX email (no waiting for an admin).",
+  "notes": "OmniProcessor 1.3.14: City of San Jose intersection counts. Load the raw files and the City's workbooks come out, nothing to pick.",
   "download_url": "https://github.com/marksalhany/tmc-version/releases/download/v1.3.14/OmniProcessor.v1.3.14.zip",
   "changelog": [
     {
       "version": "1.3.14",
       "date": "2026-10-19",
       "changes": [
+        "City of San Jose intersection counts (NorCal): load the raw files as they come back (5-minute bins, with an Articulated Trucks tab) and the app sets Output to San Jose reports by itself. Process writes the City's workbook for each count, named like the raw file with _SanJose at the end: one sheet per period (AM, PM) with the peak hour, the peak 15 minutes, PHF, heavy vehicle %, the four peak hour diagrams, and every bin for all vehicles, motorized, heavy, lights, bicycles and pedestrians, in the same cells as the old macro. Nothing to pick and no vehicle class question: Lights, Mediums and Articulated Trucks are set the City's way.",
+        "San Jose reports: Latitude and Longitude come from the matched map, the project name and project manager from Rainbow, and Node is the site number (number the sites on the IDAX Quest map with the City's IDs; untick Node = site number for a project the City gave no IDs for). Tick Also write the regular reports to get the usual reports too, with the workbooks in a San Jose folder. Any bin size, several periods, several days and Split Periods all work.",
+        "The San Jose reports choice is on the Output row only while a raw file with an Articulated Trucks tab is loaded. Tube files loaded in the same batch get the San Jose tube type by themselves.",
+        "CountVault: a San Jose count is stored and shown like every other intersection count, and its City workbook can be downloaded from the count's Download and Export menus (San Jose workbook).",
         "Every set-up computer now connects to CountVault by itself. Before this, a computer could be set up without its CountVault key and nothing gave it one later: Process asked \"Rainbow not checked: this computer has no CountVault key\", its counts were stored with no firm, and its report files never reached CountVault. There is nothing to do: open OmniProcessor and it connects.",
         "Setting up a new computer no longer waits for an admin. The \"Set up this computer\" window asks for your IDAX email, sends a code to it, and the code sets the computer up with every key it needs. An admin is asked only if you click Ask an admin; activation codes still work in the same Code field.",
         "A computer that is set up and is missing one of its keys now gets it by itself.",
@@ -563,8 +567,8 @@
       ]
     }
   ],
-  "sha256": "e9f71e77dd8971e6c5d5c2ffe785a1bdd124ab59fac672a0501af6c107cf3faa",
-  "build": "2026-11-24T01:11:36Z",
-  "mandatory": true,
-  "signature": "sWqCLN4Cqbnsiin6YLRwGQnyTyCgwXC7Iya5sLMOw5rdx0KXzOkgQseAIxhskvPShOa84AL4GCdd5Ef6cexjDA=="
+  "sha256": "288872419b5998775e9ad4565c2d7cf53e67496d07969a5df638ffdb94ae7d61",
+  "build": "2026-11-28T01:52:19Z",
+  "mandatory": false,
+  "signature": "D/f8pBn6U3O8cftrz+hrvchd4duMuBce3viK9E663HwJo/1rk6GXbnRE9aI/sK8+fAm0RHUM9DamtDUzPk8QCQ=="
 }
